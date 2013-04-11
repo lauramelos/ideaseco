@@ -59,7 +59,7 @@ height:100%;
 overflow: hidden;
 }
 body{
-background-color: #fff
+background-color: #000
 }
 div img{
 display:block;
@@ -67,5 +67,5 @@ height:auto;
 max-height:100%;
 width: auto;
 max-width:100%;
-margin: 0px auto;
+float:right
 }
