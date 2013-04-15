@@ -1,0 +1,84 @@
+@import 'node_modules/nib'
+@import 'deps/clean.styl'
+
+/* component styles */
+@import 'javascript/build/build.css'
+
+/* absolut url srcs */
+$host = "http://------definir.un.host-----/"
+
+/* wrap dimmension */
+$wrap_width = 960px
+
+/* Layout */
+$mainbar_height = 72px
+$nav_hight = 120px
+
+/* MOBILE Layout */
+$mob_mainbar_height = 80px
+$mob_nav_hight = 75px
+$body_top = $mob_mainbar_height + $mob_nav_hight;
+$body_content_port = 480 - $body_top
+
+/* commons */
+@import 'commons/colors.styl'
+@import 'commons/fonts.styl'
+@import 'commons/buttons.styl'
+
+/* blocks */
+@import 'footer.styl'
+//@import 'header.styl'
+
+*
+  box-sizing: border-box
+  *behavior: url( $host + 'css/boxsizing.htc')
+  outline: none
+
+body
+  font-family: $main-font
+  background-color:$grey-dark 
+  color: white
+  overflow: hidden
+  a
+    color: $grey-light
+    text-decoration: none
+  h1
+    color: #fff
+    font-size: 20px
+
+  div.back
+    img
+      display: block
+      height: auto
+      max-height: 100%
+      max-width: 100%
+      width: 100%
+      position: relative
+
+  ul.menu
+    width: 230px
+    position: absolute
+    top: 400px
+    left: 40px
+    z-index: 10
+    li.membrete
+      background-image: url('images/sprite.png')
+      height: 285px
+    li.inicio
+      height: 130px
+      h1
+        font-size: 60px
+        line-height: 60px
+    li.que
+    li.como
+      height: 60px
+      p
+        font-size: 28px
+
+    li.contact
+    li.tips
+      height: 74px
+      p
+        font-size: 48px
+
+
