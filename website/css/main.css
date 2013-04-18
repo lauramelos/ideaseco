@@ -515,17 +515,33 @@ body ul.menu li.contact a,
 body ul.menu li.tips a {
   font-size: 48px;
 }
-body div.inicio {
-  height: 560px;
-  width: 50%;
-  position: absolute;
-  background-image: url("images/inicio-back.png");
+body div.page {
   top: 50%;
-  margin-top: -280px;
-  width: 38%;
-  left: 51%;
+  left: 50.7%;
+  position: absolute;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   background-size: 100%;
   text-indent: -99999px;
+}
+body div.page.closed {
+  display: none;
+}
+body div.page.inicio {
+  height: 560px;
+  background-image: url("images/inicio-back.png");
+  margin-top: -280px;
+  width: 580px;
+}
+body div.page.quees {
+  height: 688px;
+  background-image: url("images/quees-back.png");
+  margin-top: -345px;
+  width: 580px;
+}
+body div.page.como {
+  height: 688px;
+  background-image: url("images/como-back.png");
+  margin-top: -345px;
+  width: 580px;
 }
