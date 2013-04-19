@@ -80,27 +80,37 @@ body
       height: 74px
       a
         font-size: 48px
-  div.page
-    top: 50%
-    left: 50.7%
+  div.container
+    height: 100%
+    width:580px 
     position: absolute
-    background-size: 100%
-    text-indent: -99999px
-    &.closed
-      display: none
-    &.inicio
-      height: 560px
-      background-image: url('images/inicio-back.png')
-      margin-top: -280px
-      width:580px 
-    &.quees
-      height: 688px
-      background-image: url('images/quees-back.png')
-      margin-top: -345px
-      width:580px 
-    &.como
-      height: 688px
-      background-image: url('images/como-back.png')
-      margin-top: -345px
-      width:580px 
+    left: 50.7%
+    top: 0px
+    overflow-y: scroll
+    overflow-x: hidden
+
+    div.page
+      top: 50%
+      background-size: 100%
+      text-indent: -99999px
+      &.closed
+        display: none
+      &.inicio
+        height: 560px
+        background-image: url('images/inicio-back.png')
+        margin-top: -280px
+      &.quees
+        height: 688px
+        background-image: url('images/quees-back.png')
+        margin-top: -345px
+      &.como
+        height: 688px
+        background-image: url('images/como-back.png')
+        margin-top: -345px
+        width:580px 
+      &.tips
+        height: 3400px
+        background-image: url('images/ecotips-back.png')
+        margin-top: 0px
+        top: 0px
 
