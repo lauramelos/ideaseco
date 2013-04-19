@@ -27,10 +27,27 @@ body
 
   div.container
     div.page.inicio.closed
-      p IDEAS ECO PUBLICIDAD su publicidad en manos de la gente todos los dias
+      h1 IDEAS ECO PUBLICIDAD su publicidad en manos de la gente todos los dias
     div.page.quees.closed
-      p IDEAS ECO que es ideas eco
+      h1 IDEAS ECO que es ideas eco
     div.page.como.closed
-      p IDEAS ECO como hacemos
-    div.page.tips
-      p ECO TIPS
+      h1 IDEAS ECO como hacemos
+    div.page.tips.closed
+      h1 ECO TIPS
+    div.page.contact
+      h1 Por cualquier consulta, no dudes en comunicarte con nosotros
+      form(action="#", method="post")
+        .field-container
+          input.required(type="text", value="", name="NOMBRE",
+          placeholder="NOMBRE")
+        .field-container
+          input.required(type="text", value="", name="TEL",
+          placeholder="TELEFONO")
+        .field-container
+          input.required.email(type="email", value="",
+          name="EMAIL",placeholder="EMAIL")
+        .field-container
+          input.consulta.required(type="text", value="", name="CONSULTA",
+          placeholder="CONSULTA")
+        a.enviar(href="#", title="Submit", target="_blank")
+          span ENVIAR

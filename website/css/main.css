@@ -521,7 +521,7 @@ body div.container {
   position: absolute;
   left: 50.7%;
   top: 0px;
-  overflow-y: scroll;
+  overflow-y: visible;
   overflow-x: hidden;
 }
 body div.container div.page {
@@ -530,6 +530,10 @@ body div.container div.page {
   -moz-background-size: 100%;
   background-size: 100%;
   text-indent: -99999px;
+  width: 580px;
+  position: relative;
+  height: 688px;
+  margin-top: -345px;
 }
 body div.container div.page.closed {
   display: none;
@@ -540,19 +544,45 @@ body div.container div.page.inicio {
   margin-top: -280px;
 }
 body div.container div.page.quees {
-  height: 688px;
   background-image: url("images/quees-back.png");
-  margin-top: -345px;
 }
 body div.container div.page.como {
-  height: 688px;
   background-image: url("images/como-back.png");
-  margin-top: -345px;
-  width: 580px;
 }
 body div.container div.page.tips {
   height: 3400px;
   background-image: url("images/ecotips-back.png");
   margin-top: 0px;
   top: 0px;
+}
+body div.container div.page.contact {
+  text-indent: 0px;
+  background-image: url("images/contact-back.png");
+}
+body div.container div.page.contact h1 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #565327;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+body div.container div.page.contact form {
+  width: 80%;
+  margin: 20px auto 0px;
+}
+body div.container div.page.contact form .field-container input[type=text],
+body div.container div.page.contact form .field-container input[type=email] {
+  margin: 10px auto;
+  width: 100%;
+}
+body div.container div.page.contact form .field-container input[type=text].consulta,
+body div.container div.page.contact form .field-container input[type=email].consulta {
+  height: 150px;
+}
+body div.container div.page.contact form a.enviar {
+  font-weight: bold;
+  font-size: 30px;
+  color: #565327;
+  float: right;
 }

@@ -86,13 +86,17 @@ body
     position: absolute
     left: 50.7%
     top: 0px
-    overflow-y: scroll
+    overflow-y: visible
     overflow-x: hidden
 
     div.page
       top: 50%
       background-size: 100%
       text-indent: -99999px
+      width:580px 
+      position: relative
+      height: 688px
+      margin-top: -345px
       &.closed
         display: none
       &.inicio
@@ -100,17 +104,35 @@ body
         background-image: url('images/inicio-back.png')
         margin-top: -280px
       &.quees
-        height: 688px
         background-image: url('images/quees-back.png')
-        margin-top: -345px
       &.como
-        height: 688px
         background-image: url('images/como-back.png')
-        margin-top: -345px
-        width:580px 
       &.tips
         height: 3400px
         background-image: url('images/ecotips-back.png')
         margin-top: 0px
         top: 0px
-
+      &.contact
+        text-indent: 0px
+        background-image: url('images/contact-back.png')
+        h1
+          font-size: 17px
+          font-weight: bold
+          color: #565327
+          width: 500px
+          margin: 0 auto
+          padding: 50px 0 0
+        form
+          width: 80%
+          margin: 20px auto 0px
+          .field-container input[type=text]
+          .field-container input[type=email]
+            margin: 10px auto
+            width:100%
+            &.consulta
+              height: 150px
+          a.enviar
+            font-weight: bold
+            font-size: 30px
+            color:#565327
+            float: right
