@@ -1,0 +1,8 @@
+config/.*
+Readme.md
+Makefile
+sources/.*
+resources/.*
+.git/.*
+compiler.sh
+install.sh
