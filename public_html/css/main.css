@@ -539,10 +539,10 @@ body ul.menu li.contact {
   height: 81px;
 }
 body ul.menu li.contact.current {
-  background-position: 100% -571px;
+  background-position: 100% -573px;
 }
 body ul.menu li.contact:hover {
-  background-position: 100% -571px;
+  background-position: 100% -573px;
 }
 body ul.menu li.tips {
   background-position: 0 -652px;
