@@ -56,30 +56,37 @@ body
       position: relative
 
   ul.menu
-    width: 230px
+    width: 280px
     position: absolute
+    height: 600px
     top: 40px
     left: 40px
     z-index: 10
-    li.membrete
-      background-image: url('images/sprite.png')
-      height: 285px
-    li.inicio
-      height: 130px
+    li
+      background-image: url('images/menu-sprite.png')
+      background-size: 200% auto 
+      text-indent: -9999px
       a
-        font-size: 60px
-        line-height: 60px
-    li.que
-    li.como
-      height: 60px
-      a
-        font-size: 28px
-
-    li.contact
-    li.tips
-      height: 74px
-      a
-        font-size: 48px
+        display: block
+        width: 100%
+        height: 100%
+      &.membrete
+        height: 310px
+      &.inicio
+        height: 145px
+        background-position: 0 -310px
+      &.que
+        height: 65px
+        background-position: 0 -456px 
+      &.como
+        height: 51px
+        background-position: 0 -521px 
+      &.contact
+        background-position: 0 -571px 
+        height: 81px
+      &.tips
+        background-position: 0 -652px 
+        height: 86px
   div.container
     height: 100%
     width:580px 
