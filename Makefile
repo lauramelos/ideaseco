@@ -30,7 +30,8 @@ ftp-push:
 deploy:
 	git push origin master
 	make ftp-push
+
 ftp-deploy:
-git ftp push -u ideaseco -p online ftp://www.ideasecopublicidad.com.ar
+	git ftp push -u ideaseco -p online ftp://www.ideasecopublicidad.com.ar
 
 .PHONY: install  html all css clean-js
