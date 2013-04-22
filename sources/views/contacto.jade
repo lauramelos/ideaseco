@@ -14,17 +14,32 @@ body
     img(src="images/background.jpg", alt="ideas eco")
   ul.menu
     li.membrete
-    li.inicio.current
+    li.inicio
       a(href="newindex.html") INICIO
     li.que
       a(href="quees.html") QUE ES ideas ECO
     li.como
       a(href="como.html") COMO HACEMOS?
-    li.contact
+    li.contact.current
       a(href="contacto.html") CONTACTO
     li.tips
       a(href="tips.html") ECO TIPS
 
   div.container
-    div.page.inicio
-      h1 IDEAS ECO PUBLICIDAD su publicidad en manos de la gente todos los dias
+    div.page.contact
+      h1 Por cualquier consulta, no dudes en comunicarte con nosotros
+      form(action="#", method="post")
+        .field-container
+          input.required(type="text", value="", name="NOMBRE",
+          placeholder="NOMBRE")
+        .field-container
+          input.required(type="text", value="", name="TEL",
+          placeholder="TELEFONO")
+        .field-container
+          input.required.email(type="email", value="",
+          name="EMAIL",placeholder="EMAIL")
+        .field-container
+          input.consulta.required(type="text", value="", name="CONSULTA",
+          placeholder="CONSULTA")
+        a.enviar(href="#", title="Submit", target="_blank")
+          span ENVIAR

@@ -11,10 +11,10 @@ install:
 	bash install.sh
 
 html:
-	jade sources/views/newindex.jade -O website/
+	jade sources/views/*.jade -O public_html/
 
 css:
-	stylus sources/styles/main.styl -o website/css/
+	stylus sources/styles/main.styl -o public_html/css/
 
 js:
 	bash compiler.sh
@@ -30,5 +30,7 @@ ftp-push:
 deploy:
 	git push origin master
 	make ftp-push
+ftp-deploy:
+git ftp push -u ideaseco -p online ftp://www.ideasecopublicidad.com.ar
 
 .PHONY: install  html all css clean-js
