@@ -461,7 +461,7 @@ a.link-button-light:hover {
 }
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  background-color: #303030;
+  background-color: #000;
   color: #fff;
   overflow: hidden;
 }
@@ -511,11 +511,17 @@ body ul.menu li.inicio {
 body ul.menu li.inicio.current {
   background-position: 100% -310px;
 }
+body ul.menu li.inicio:hover {
+  background-position: 100% -310px;
+}
 body ul.menu li.que {
   height: 65px;
   background-position: 0 -456px;
 }
 body ul.menu li.que.current {
+  background-position: 100% -456px;
+}
+body ul.menu li.que:hover {
   background-position: 100% -456px;
 }
 body ul.menu li.como {
@@ -525,6 +531,9 @@ body ul.menu li.como {
 body ul.menu li.como.current {
   background-position: 100% -521px;
 }
+body ul.menu li.como:hover {
+  background-position: 100% -521px;
+}
 body ul.menu li.contact {
   background-position: 0 -571px;
   height: 81px;
@@ -532,11 +541,17 @@ body ul.menu li.contact {
 body ul.menu li.contact.current {
   background-position: 100% -571px;
 }
+body ul.menu li.contact:hover {
+  background-position: 100% -571px;
+}
 body ul.menu li.tips {
   background-position: 0 -652px;
   height: 86px;
 }
 body ul.menu li.tips.current {
+  background-position: 100% -652px;
+}
+body ul.menu li.tips:hover {
   background-position: 100% -652px;
 }
 body div.container {
@@ -595,13 +610,14 @@ body div.container div.page.contact form {
   width: 80%;
   margin: 20px auto 0px;
 }
+body div.container div.page.contact form textarea,
 body div.container div.page.contact form .field-container input[type=text],
 body div.container div.page.contact form .field-container input[type=email] {
+  border: 0 none;
   margin: 10px auto;
   width: 100%;
 }
-body div.container div.page.contact form .field-container input[type=text].consulta,
-body div.container div.page.contact form .field-container input[type=email].consulta {
+body div.container div.page.contact form textarea.consulta {
   height: 150px;
 }
 body div.container div.page.contact form a.enviar {
