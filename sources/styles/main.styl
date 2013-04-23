@@ -103,7 +103,6 @@ body
 
   div.container
     height: 100%
-    width:580px 
     position: absolute
     left: 50.7%
     top: 0px
@@ -112,12 +111,10 @@ body
 
     div.page
       top: 50%
-      background-size: 100%
       text-indent: -99999px
       width:580px 
       position: relative
       height: 680px
-      margin-top: -345px
       &.inicio
         height: 615px
         background-image: url('images/inicio-back.png')
@@ -161,9 +158,54 @@ body
 
 @media only screen and (max-height : 800px)
   body
+    div.container
+      left: 50.7%
+      div.page
+        top: 50%
+        text-indent: -99999px
+        width:420px 
+        &.inicio
+          height: 459px
+          background-image: url('images/inicio-back2.png')
+          margin-top: -230px
+        &.quees
+          background-image: url('images/quees-back2.png')
+          height: 494px
+          margin-top: -245px
+        &.como
+          background-image: url('images/como-back2.png')
+          height: 481px
+          margin-top: -240px
+        &.tips
+          height: 2562px
+          background-image: url('images/ecotips-back2.png')
+          margin-top: 0px
+          top: 0px
+        &.contact
+          height: 498px
+          margin-top: -249px
+          text-indent: 0px
+          background-image: url('images/contact-back2.png')
+          h1
+            font-size: 11px
+            width: 402px
+            padding: 20px 0 0
+          form
+            width: 80%
+            margin: 20px auto 0px
+            textarea
+            .field-container input[type=text]
+            .field-container input[type=email]
+              border: 0 none
+            textarea.consulta
+                height: 130px
+            a.enviar
+              font-size: 24px
+
+
     ul.menu
       $h = 1.2727272727
-      width: (280 / 1.27272727)px
+      width: (280 / $h)px
       li
         background-image: url('images/menu-sprite2.png')
         &.membrete

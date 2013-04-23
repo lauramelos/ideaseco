@@ -11,7 +11,7 @@ install:
 	bash install.sh
 
 html:
-	jade sources/views/*.jade -O public_html/
+	jade sources/views/*.jade -P -O public_html/
 
 css:
 	stylus sources/styles/main.styl -o public_html/css/
