@@ -484,16 +484,12 @@ body div.back img {
 body ul.menu {
   width: 280px;
   position: absolute;
-  height: 600px;
   top: 40px;
   left: 40px;
   z-index: 10;
 }
 body ul.menu li {
   background-image: url("images/menu-sprite.png");
-  -webkit-background-size: 200% auto;
-  -moz-background-size: 200% auto;
-  background-size: 200% auto;
   text-indent: -9999px;
 }
 body ul.menu li a {
@@ -505,54 +501,44 @@ body ul.menu li.membrete {
   height: 310px;
 }
 body ul.menu li.inicio {
-  height: 145px;
+  height: 147px;
   background-position: 0 -310px;
 }
-body ul.menu li.inicio.current {
-  background-position: 100% -310px;
-}
+body ul.menu li.inicio.current,
 body ul.menu li.inicio:hover {
-  background-position: 100% -310px;
+  background-position: 279px -310px;
 }
 body ul.menu li.que {
   height: 65px;
   background-position: 0 -456px;
 }
-body ul.menu li.que.current {
-  background-position: 100% -456px;
-}
+body ul.menu li.que.current,
 body ul.menu li.que:hover {
-  background-position: 100% -456px;
+  background-position: 279px -456px;
 }
 body ul.menu li.como {
   height: 51px;
   background-position: 0 -521px;
 }
-body ul.menu li.como.current {
-  background-position: 100% -521px;
-}
+body ul.menu li.como.current,
 body ul.menu li.como:hover {
-  background-position: 100% -521px;
+  background-position: 279px -521px;
 }
 body ul.menu li.contact {
   background-position: 0 -571px;
   height: 81px;
 }
-body ul.menu li.contact.current {
-  background-position: 100% -573px;
-}
+body ul.menu li.contact.current,
 body ul.menu li.contact:hover {
-  background-position: 100% -573px;
+  background-position: 279px -573px;
 }
 body ul.menu li.tips {
   background-position: 0 -652px;
-  height: 86px;
+  height: 85px;
 }
-body ul.menu li.tips.current {
-  background-position: 100% -652px;
-}
+body ul.menu li.tips.current,
 body ul.menu li.tips:hover {
-  background-position: 100% -652px;
+  background-position: 279px -652px;
 }
 body div.container {
   height: 100%;
@@ -573,9 +559,6 @@ body div.container div.page {
   position: relative;
   height: 680px;
   margin-top: -345px;
-}
-body div.container div.page.closed {
-  display: none;
 }
 body div.container div.page.inicio {
   height: 615px;
@@ -626,4 +609,55 @@ body div.container div.page.contact form a.enviar {
   font-size: 30px;
   color: #565327;
   float: right;
+}
+@media only screen and (max-height : 800px) {
+  body ul.menu {
+    width: 220.00000047142856px;
+  }
+  body ul.menu li {
+    background-image: url("images/menu-sprite2.png");
+  }
+  body ul.menu li.membrete {
+    height: 243.57142857664795px;
+  }
+  body ul.menu li.inicio {
+    height: 113.92857143101274px;
+    background-position: 0px -245px;
+  }
+  body ul.menu li.inicio.current,
+  body ul.menu li.inicio:hover {
+    background-position: 219px -245px;
+  }
+  body ul.menu li.que {
+    height: 51.071428572522954px;
+    background-position: 0 -358px;
+  }
+  body ul.menu li.que.current,
+  body ul.menu li.que:hover {
+    background-position: 219px -358px;
+  }
+  body ul.menu li.como {
+    height: 40.07142857228724px;
+    background-position: 0 -410px;
+  }
+  body ul.menu li.como.current,
+  body ul.menu li.como:hover {
+    background-position: 219px -410px;
+  }
+  body ul.menu li.contact {
+    background-position: 0 -451px;
+    height: 63.64285714422091px;
+  }
+  body ul.menu li.contact.current,
+  body ul.menu li.contact:hover {
+    background-position: 219px -451px;
+  }
+  body ul.menu li.tips {
+    background-position: 0 -512px;
+    height: 66.78571428714541px;
+  }
+  body ul.menu li.tips.current,
+  body ul.menu li.tips:hover {
+    background-position: 219px -512px;
+  }
 }
