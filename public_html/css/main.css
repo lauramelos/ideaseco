@@ -462,7 +462,7 @@ a.link-button-light:hover {
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   background-color: #000;
-  color: #fff;
+  color: #565327;
   overflow: hidden;
 }
 body a {
@@ -470,7 +470,7 @@ body a {
   text-decoration: none;
 }
 body h1 {
-  color: #fff;
+  color: #565327;
   font-size: 20px;
 }
 body div.back img {
@@ -565,29 +565,63 @@ body div.container {
 }
 body div.container div.page {
   top: 50%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: 100%;
-  text-indent: -99999px;
+/*text-indent: -99999px*/
   width: 580px;
   position: relative;
   height: 680px;
   margin-top: -345px;
 }
-body div.container div.page.closed {
-  display: none;
+body div.container div.page ul {
+  background-image: url("images/bg-pix.png");
+  background-repeat: repeat;
+  position: relative;
+  padding: 20px 0;
+}
+body div.container div.page ul h1 {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 22px;
+  width: 300px;
+}
+body div.container div.page ul h1:before {
+  height: 37px;
+  width: 37px;
+  background-image: url("images/sprite.png");
+  content: " ";
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+body div.container div.page ul li {
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+}
+body div.container div.page ul p {
+  width: 350px;
+  margin: 25px auto;
+  line-height: 20px;
+  text-align: center;
 }
 body div.container div.page.inicio {
   height: 615px;
   background-image: url("images/inicio-back.png");
   margin-top: -290px;
 }
-body div.container div.page.quees {
-  background-image: url("images/quees-back.png");
+body div.container div.page.como ul li {
+  padding: 20px 0px;
+  height: 60px;
+  line-height: 22px;
 }
-body div.container div.page.como {
-  background-image: url("images/como-back.png");
-  height: 660px;
+body div.container div.page.como ul li:before {
+  height: 22px;
+  width: 22px;
+  background-image: url("images/sprite.png");
+  content: " ";
+  position: absolute;
+  top: 20px;
+  left: -34px;
+  background-position: 0 -38px;
 }
 body div.container div.page.tips {
   height: 3400px;
@@ -602,7 +636,6 @@ body div.container div.page.contact {
 body div.container div.page.contact h1 {
   font-size: 17px;
   font-weight: bold;
-  color: #565327;
   width: 500px;
   margin: 0 auto;
   padding: 50px 0 0;

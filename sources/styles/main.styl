@@ -37,13 +37,14 @@ $body_content_port = 480 - $body_top
 body
   font-family: $main-font
   background-color: black
-  color: white
+  color: $color-font
   overflow: hidden
   a
     color: $grey-light
     text-decoration: none
   h1
-    color: #fff
+
+    color: $color-font
     font-size: 20px
 
   div.back
@@ -118,23 +119,61 @@ body
 
     div.page
       top: 50%
-      background-size: 100%
-      text-indent: -99999px
+      /*text-indent: -99999px*/
       width:580px 
       position: relative
       height: 680px
       margin-top: -345px
-      &.closed
-        display: none
+      ul
+        background-image: url('images/bg-pix.png')
+        background-repeat: repeat
+        position: relative
+        padding: 20px 0
+        h1
+          margin: 0 auto
+          font-weight: bold
+          font-size: 22px
+          width: 300px
+          &:before
+            height: 37px
+            width: 37px
+            background-image: url('images/sprite.png')
+            content: " "
+            position: absolute
+            top: 20px
+            left: 50px
+        li
+          position: relative
+          width: 350px
+          margin: 0 auto
+        p
+          width: 350px
+          margin: 25px auto
+          line-height: 20px
+          text-align: center
       &.inicio
         height: 615px
         background-image: url('images/inicio-back.png')
         margin-top: -290px
       &.quees
-        background-image: url('images/quees-back.png')
+        /*background-image: url('images/quees-back.png')*/
       &.como
-        background-image: url('images/como-back.png')
-        height: 660px
+        /*background-image: url('images/como-back.png')*/
+        ul
+          li
+            padding: 20px 0px
+            &:before
+              height: 22px
+              width: 22px
+              background-image: url('images/sprite.png')
+              content: " "
+              position: absolute
+              top: 20px
+              left: -34px
+              background-position: 0 -38px
+            height: 60px
+            line-height: 22px
+
       &.tips
         height: 3400px
         background-image: url('images/ecotips-back.png')
@@ -146,7 +185,6 @@ body
         h1
           font-size: 17px
           font-weight: bold
-          color: #565327
           width: 500px
           margin: 0 auto
           padding: 50px 0 0
