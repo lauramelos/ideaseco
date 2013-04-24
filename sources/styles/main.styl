@@ -59,13 +59,11 @@ body
   ul.menu
     width: 280px
     position: absolute
-    height: 600px
     top: 40px
     left: 40px
     z-index: 10
     li
       background-image: url('images/menu-sprite.png')
-      background-size: 200% auto 
       text-indent: -9999px
       a
         display: block
@@ -74,43 +72,38 @@ body
       &.membrete
         height: 310px
       &.inicio
-        height: 145px
+        height: 147px
         background-position: 0 -310px
         &.current
-          background-position: 100% -310px
         &:hover
-          background-position: 100% -310px
+          background-position: 279px -310px
       &.que
         height: 65px
         background-position: 0 -456px
         &.current
-          background-position: 100% -456px
         &:hover
-          background-position: 100% -456px
+          background-position: 279px -456px
       &.como
         height: 51px
         background-position: 0 -521px
         &.current
-          background-position: 100% -521px
         &:hover
-          background-position: 100% -521px
+          background-position: 279px -521px
       &.contact
         background-position: 0 -571px
         height: 81px
         &.current
-          background-position: 100% -573px
         &:hover
-          background-position: 100% -573px
+          background-position: 279px -573px
       &.tips
         background-position: 0 -652px 
-        height: 86px
+        height: 85px
         &.current
-          background-position: 100% -652px
         &:hover
-          background-position: 100% -652px
+          background-position: 279px -652px
+
   div.container
     height: 100%
-    width:580px 
     position: absolute
     left: 50.7%
     top: 0px
@@ -204,3 +197,90 @@ body
             font-size: 30px
             color:#565327
             float: right
+
+@media only screen and (max-height : 800px)
+  body
+    div.container
+      left: 50.7%
+      div.page
+        top: 50%
+        text-indent: -99999px
+        width:420px 
+        &.inicio
+          height: 459px
+          background-image: url('images/inicio-back2.png')
+          margin-top: -230px
+        &.quees
+          background-image: url('images/quees-back2.png')
+          height: 494px
+          margin-top: -245px
+        &.como
+          background-image: url('images/como-back2.png')
+          height: 481px
+          margin-top: -240px
+        &.tips
+          height: 2562px
+          background-image: url('images/ecotips-back2.png')
+          margin-top: 0px
+          top: 0px
+        &.contact
+          height: 498px
+          margin-top: -249px
+          text-indent: 0px
+          background-image: url('images/contact-back2.png')
+          h1
+            font-size: 11px
+            width: 402px
+            padding: 20px 0 0
+          form
+            width: 80%
+            margin: 20px auto 0px
+            textarea
+            .field-container input[type=text]
+            .field-container input[type=email]
+              border: 0 none
+            textarea.consulta
+                height: 130px
+            a.enviar
+              font-size: 24px
+
+
+    ul.menu
+      $h = 1.2727272727
+      width: (280 / $h)px
+      li
+        background-image: url('images/menu-sprite2.png')
+        &.membrete
+          height: (310 / $h)px
+        &.inicio
+          height: (145 / $h)px
+          background-position: 0px -245px
+          &.current
+          &:hover
+            background-position: 219px -245px
+        &.que
+          height: (65 / $h)px
+          background-position: 0 -358px
+          &.current
+          &:hover
+            background-position: 219px -358px
+        &.como
+          height: (51 / $h)px
+          background-position: 0 -410px
+          &.current
+          &:hover
+            background-position: 219px -410px
+        &.contact
+          background-position: 0 -451px
+          height: (81 / $h)px
+          &.current
+          &:hover
+            background-position: 219px -451px
+        &.tips
+          background-position: 0 -512px
+          height: (85 / $h)px
+          &.current
+          &:hover
+            background-position: 219px -512px
+
+
