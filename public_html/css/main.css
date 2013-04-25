@@ -588,10 +588,17 @@ body div.container div.page ul p {
   line-height: 20px;
   text-align: center;
 }
-body div.container div.page.inicio {
-  height: 615px;
-  background-image: url("images/inicio-back.png");
-  margin-top: -290px;
+body div.container div.page.inicio li.inicio {
+  background-image: url("images/inicio.png");
+  height: 400px;
+  width: 300px;
+  margin: 30px auto;
+}
+body div.container div.page.como ul p {
+  background-image: url("images/recuadro.png");
+  height: 145px;
+  width: 400px;
+  padding: 35px;
 }
 body div.container div.page.como ul li {
   padding: 20px 0px;
