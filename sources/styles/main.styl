@@ -103,20 +103,16 @@ body
           background-position: 279px -652px
 
   div.container
-    height: 100%
     position: absolute
     left: 50.7%
     top: 0px
     overflow-y: visible
     overflow-x: hidden
+    height: 100%
 
     div.page
-      top: 50%
-      /*text-indent: -99999px*/
       width:580px 
-      position: relative
-      height: 680px
-      margin-top: -345px
+      margin-top: 17%
       ul
         background-image: url('images/bg-pix.png')
         background-repeat: repeat
@@ -129,12 +125,14 @@ body
           width: 300px
           &:before
             height: 37px
-            width: 37px
+            width: 36px
             background-image: url('images/sprite.png')
             content: " "
             position: absolute
             top: 20px
             left: 50px
+        &:last-child
+          padding: 1px 0px 20px
         li
           position: relative
           width: 350px
@@ -145,11 +143,13 @@ body
           line-height: 20px
           text-align: center
       &.inicio
-        li.inicio
-          background-image: url('images/inicio.png')
-          height: 400px
-          width: 300px
-          margin: 30px auto
+        ul
+          padding: 20px 0px
+          li.inicio
+            background-image: url('images/inicio.png')
+            height: 400px
+            width: 300px
+            margin: 30px auto
       &.quees
         /*background-image: url('images/quees-back.png')*/
       &.como
@@ -180,8 +180,6 @@ body
         margin-top: 0px
         top: 0px
       &.contact
-        text-indent: 0px
-        background-image: url('images/contact-back.png')
         h1
           font-size: 17px
           font-weight: bold
@@ -199,32 +197,64 @@ body
             width:100%
           textarea.consulta
               height: 150px
-          a.enviar
+          a
             font-weight: bold
-            font-size: 30px
+            font-size: 20px
             color:#565327
-            float: right
+            display: block
+            &.enviar
+              float: right
+              font-size: 30px
+          div.links
+            margin: 172px 0 0 90px
+            a
+              line-height: 25px
+            &:after
+              content: " "
+              background-image: url('images/sprite.png')
+              height: 59px
+              width: 80px
+              position: absolute
+              bottom: 10px
+              left: 50px
+              background-position: -36px 0px
+        div.footer
+          background-image: url('images/contact-back.png')
+          height: 46px
 
 @media only screen and (max-height : 800px)
   body
     div.container
       left: 50.7%
       div.page
-        top: 50%
-        text-indent: -99999px
         width:420px 
+        ul
+          font-size: 14px
+          p
+            font-size: 14px
+            margin: 13px auto
+          h1
+            font-size: 15px
+            &:before
+              top: 15px
+              left: 15px
+
         &.inicio
-          height: 459px
-          background-image: url('images/inicio-back2.png')
-          margin-top: -230px
+          margin-top: 9%
+          ul li.inicio
+            background-image: url('images/inicio2.png')
+            height: 326px
+            width: 240px
+            margin: 10px auto
         &.quees
-          background-image: url('images/quees-back2.png')
-          height: 494px
-          margin-top: -245px
+          margin-top: 40px
         &.como
-          background-image: url('images/como-back2.png')
-          height: 481px
-          margin-top: -240px
+          margin-top: 40px
+          ul 
+            li
+              height: 50px
+            li:before
+              left: -25px
         &.tips
           height: 2562px
           background-image: url('images/ecotips-back2.png')
@@ -232,12 +262,9 @@ body
           top: 0px
         &.contact
           height: 498px
-          margin-top: -249px
-          text-indent: 0px
-          background-image: url('images/contact-back2.png')
           h1
             font-size: 11px
-            width: 402px
+            width: 310px
             padding: 20px 0 0
           form
             width: 80%
@@ -250,7 +277,13 @@ body
                 height: 130px
             a.enviar
               font-size: 24px
-
+            div.links
+              margin: 81px 0 0 85px
+              a
+                font-size: 16px
+                line-height: 23px
+              &:after
+                left: 35px
 
     ul.menu
       $h = 1.2727272727

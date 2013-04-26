@@ -541,20 +541,16 @@ body ul.menu li.tips:hover {
   background-position: 279px -652px;
 }
 body div.container {
-  height: 100%;
   position: absolute;
   left: 50.7%;
   top: 0px;
   overflow-y: visible;
   overflow-x: hidden;
+  height: 100%;
 }
 body div.container div.page {
-  top: 50%;
-/*text-indent: -99999px*/
   width: 580px;
-  position: relative;
-  height: 680px;
-  margin-top: -345px;
+  margin-top: 17%;
 }
 body div.container div.page ul {
   background-image: url("images/bg-pix.png");
@@ -570,12 +566,15 @@ body div.container div.page ul h1 {
 }
 body div.container div.page ul h1:before {
   height: 37px;
-  width: 37px;
+  width: 36px;
   background-image: url("images/sprite.png");
   content: " ";
   position: absolute;
   top: 20px;
   left: 50px;
+}
+body div.container div.page ul:last-child {
+  padding: 1px 0px 20px;
 }
 body div.container div.page ul li {
   position: relative;
@@ -588,7 +587,10 @@ body div.container div.page ul p {
   line-height: 20px;
   text-align: center;
 }
-body div.container div.page.inicio li.inicio {
+body div.container div.page.inicio ul {
+  padding: 20px 0px;
+}
+body div.container div.page.inicio ul li.inicio {
   background-image: url("images/inicio.png");
   height: 400px;
   width: 300px;
@@ -621,10 +623,6 @@ body div.container div.page.tips {
   margin-top: 0px;
   top: 0px;
 }
-body div.container div.page.contact {
-  text-indent: 0px;
-  background-image: url("images/contact-back.png");
-}
 body div.container div.page.contact h1 {
   font-size: 17px;
   font-weight: bold;
@@ -646,35 +644,77 @@ body div.container div.page.contact form .field-container input[type=email] {
 body div.container div.page.contact form textarea.consulta {
   height: 150px;
 }
-body div.container div.page.contact form a.enviar {
+body div.container div.page.contact form a {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   color: #565327;
+  display: block;
+}
+body div.container div.page.contact form a.enviar {
   float: right;
+  font-size: 30px;
+}
+body div.container div.page.contact form div.links {
+  margin: 172px 0 0 90px;
+}
+body div.container div.page.contact form div.links a {
+  line-height: 25px;
+}
+body div.container div.page.contact form div.links:after {
+  content: " ";
+  background-image: url("images/sprite.png");
+  height: 59px;
+  width: 80px;
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  background-position: -36px 0px;
+}
+body div.container div.page.contact div.footer {
+  background-image: url("images/contact-back.png");
+  height: 46px;
 }
 @media only screen and (max-height : 800px) {
   body div.container {
     left: 50.7%;
   }
   body div.container div.page {
-    top: 50%;
-    text-indent: -99999px;
     width: 420px;
   }
+  body div.container div.page ul {
+    font-size: 14px;
+  }
+  body div.container div.page ul p {
+    font-size: 14px;
+    margin: 13px auto;
+  }
+  body div.container div.page ul h1 {
+    font-size: 15px;
+  }
+  body div.container div.page ul h1:before {
+    top: 15px;
+    left: 15px;
+  }
   body div.container div.page.inicio {
-    height: 459px;
-    background-image: url("images/inicio-back2.png");
-    margin-top: -230px;
+    margin-top: 9%;
+  }
+  body div.container div.page.inicio ul li.inicio {
+    background-image: url("images/inicio2.png");
+    height: 326px;
+    width: 240px;
+    margin: 10px auto;
   }
   body div.container div.page.quees {
-    background-image: url("images/quees-back2.png");
-    height: 494px;
-    margin-top: -245px;
+    margin-top: 40px;
   }
   body div.container div.page.como {
-    background-image: url("images/como-back2.png");
-    height: 481px;
-    margin-top: -240px;
+    margin-top: 40px;
+  }
+  body div.container div.page.como ul li {
+    height: 50px;
+  }
+  body div.container div.page.como ul li:before {
+    left: -25px;
   }
   body div.container div.page.tips {
     height: 2562px;
@@ -684,13 +724,10 @@ body div.container div.page.contact form a.enviar {
   }
   body div.container div.page.contact {
     height: 498px;
-    margin-top: -249px;
-    text-indent: 0px;
-    background-image: url("images/contact-back2.png");
   }
   body div.container div.page.contact h1 {
     font-size: 11px;
-    width: 402px;
+    width: 310px;
     padding: 20px 0 0;
   }
   body div.container div.page.contact form {
@@ -707,6 +744,16 @@ body div.container div.page.contact form a.enviar {
   }
   body div.container div.page.contact form a.enviar {
     font-size: 24px;
+  }
+  body div.container div.page.contact form div.links {
+    margin: 81px 0 0 85px;
+  }
+  body div.container div.page.contact form div.links a {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  body div.container div.page.contact form div.links:after {
+    left: 35px;
   }
   body ul.menu {
     width: 220.00000000471428px;
