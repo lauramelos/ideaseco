@@ -618,10 +618,48 @@ body div.container div.page.como ul li:before {
   background-position: 0 -38px;
 }
 body div.container div.page.tips {
-  height: 3400px;
-  background-image: url("images/ecotips-back.png");
   margin-top: 0px;
   top: 0px;
+}
+body div.container div.page.tips ul h1 {
+  width: 330px;
+}
+body div.container div.page.tips ul h1:before {
+  background-position: 0 -38px;
+  top: 20px;
+}
+body div.container div.page.tips ul li {
+  width: 430px;
+}
+body div.container div.page.tips ul li p {
+  background-color: #faf0d4;
+  width: 50%;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  border: 2px solid #96ba20;
+  padding: 10px;
+  margin: 0px;
+}
+body div.container div.page.tips ul li.p1 {
+  background-image: url("images/ecotips11.png");
+  height: 538px;
+}
+body div.container div.page.tips ul li.p2 {
+  background-image: url("images/ecotips12.png");
+  height: 660px;
+}
+body div.container div.page.tips ul li.p3 {
+  background-image: url("images/ecotips13.png");
+  height: 574px;
+}
+body div.container div.page.tips ul li.p4 {
+  background-image: url("images/ecotips14.png");
+  height: 636px;
+}
+body div.container div.page.tips ul li.p5 {
+  background-image: url("images/ecotips15.png");
+  height: 430px;
 }
 body div.container div.page.contact h1 {
   font-size: 17px;
@@ -716,11 +754,28 @@ body div.container div.page.contact div.footer {
   body div.container div.page.como ul li:before {
     left: -25px;
   }
-  body div.container div.page.tips {
-    height: 2562px;
-    background-image: url("images/ecotips-back2.png");
-    margin-top: 0px;
-    top: 0px;
+  body div.container div.page.tips ul li {
+    width: 310px;
+  }
+  body div.container div.page.tips ul li.p1 {
+    background-image: url("images/ecotips21.png");
+    height: 388px;
+  }
+  body div.container div.page.tips ul li.p2 {
+    background-image: url("images/ecotips22.png");
+    height: 476px;
+  }
+  body div.container div.page.tips ul li.p3 {
+    background-image: url("images/ecotips23.png");
+    height: 413px;
+  }
+  body div.container div.page.tips ul li.p4 {
+    background-image: url("images/ecotips24.png");
+    height: 458px;
+  }
+  body div.container div.page.tips ul li.p5 {
+    background-image: url("images/ecotips25.png");
+    height: 310px;
   }
   body div.container div.page.contact {
     height: 498px;
