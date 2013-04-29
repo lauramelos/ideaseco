@@ -661,44 +661,47 @@ body div.container div.page.tips ul li.p5 {
   background-image: url("images/ecotips15.png");
   height: 430px;
 }
-body div.container div.page.contact p.thanks {
+body div.container div.page.contact ul p.thanks {
   padding: 200px 0;
 }
-body div.container div.page.contact h1 {
+body div.container div.page.contact ul h1 {
   font-size: 17px;
   font-weight: bold;
   width: 500px;
   margin: 0 auto;
   padding: 50px 0 0;
 }
-body div.container div.page.contact form {
+body div.container div.page.contact ul h1:before {
+  display: none;
+}
+body div.container div.page.contact ul form {
   font-size: 12px;
   padding: 12px 0px;
   width: 80%;
   margin: 20px auto 0px;
 }
-body div.container div.page.contact form p {
+body div.container div.page.contact ul form p {
   font-size: 14px;
   line-height: 16px;
   text-align: left;
   margin: 0px;
   width: 100%;
 }
-body div.container div.page.contact form p label {
+body div.container div.page.contact ul form p label {
   font-size: 14px;
   display: block;
 }
-body div.container div.page.contact form p input,
-body div.container div.page.contact form p textarea {
+body div.container div.page.contact ul form p input,
+body div.container div.page.contact ul form p textarea {
   border: 0 none;
   margin: 10px auto;
   width: 100%;
   height: 20px;
 }
-body div.container div.page.contact form p textarea {
+body div.container div.page.contact ul form p textarea {
   height: 150px;
 }
-body div.container div.page.contact form input[type=submit] {
+body div.container div.page.contact ul form input[type=submit] {
   font-weight: bold;
   font-size: 20px;
   color: #565327;
@@ -710,17 +713,17 @@ body div.container div.page.contact form input[type=submit] {
   cursor: pointer;
   padding: 0px;
 }
-body div.container div.page.contact div.links {
+body div.container div.page.contact ul div.links {
   margin: 130px 0 20px 140px;
 }
-body div.container div.page.contact div.links a {
+body div.container div.page.contact ul div.links a {
   font-weight: bold;
   font-size: 20px;
   color: #565327;
   display: block;
   line-height: 25px;
 }
-body div.container div.page.contact div.links:after {
+body div.container div.page.contact ul div.links:after {
   content: " ";
   background-image: url("images/sprite.png");
   height: 59px;
@@ -730,7 +733,7 @@ body div.container div.page.contact div.links:after {
   left: 50px;
   background-position: -36px 0px;
 }
-body div.container div.page.contact div.footer {
+body div.container div.page.contact ul div.footer {
   background-image: url("images/contact-back.png");
   height: 46px;
 }

@@ -210,67 +210,70 @@ body
               height: 430px
 
       &.contact
-        p.thanks
-          padding: 200px 0
-        h1
-          font-size: 17px
-          font-weight: bold
-          width: 500px
-          margin: 0 auto
-          padding: 50px 0 0
-        form
-          font-size: 12px
-          padding: 12px 0px
-          width: 80%
-          margin: 20px auto 0px
-          p
-            font-size: 14px
-            line-height: 16px
-            text-align: left
-            margin: 0px
-            width: 100%
-            label
+        ul
+          p.thanks
+            padding: 200px 0
+          h1
+            font-size: 17px
+            font-weight: bold
+            width: 500px
+            margin: 0 auto
+            padding: 50px 0 0
+            &:before
+              display: none
+          form
+            font-size: 12px
+            padding: 12px 0px
+            width: 80%
+            margin: 20px auto 0px
+            p
               font-size: 14px
+              line-height: 16px
+              text-align: left
+              margin: 0px
+              width: 100%
+              label
+                font-size: 14px
+                display: block
+              input
+              textarea
+                border: 0 none
+                margin: 10px auto
+                width:100%
+                height: 20px
+              textarea
+                height: 150px
+            input[type=submit]
+              font-weight: bold
+              font-size: 20px
+              color:#565327
               display: block
-            input
-            textarea
-              border: 0 none
-              margin: 10px auto
-              width:100%
-              height: 20px
-            textarea
-              height: 150px
-          input[type=submit]
-            font-weight: bold
-            font-size: 20px
-            color:#565327
-            display: block
-            float: right
-            font-size: 30px
-            background-color: transparent
-            border: 0px
-            cursor: pointer
-            padding: 0px
-        div.links
-          margin: 130px 0 20px 140px
-          a
-            font-weight: bold
-            font-size: 20px
-            color:#565327
-            display: block
-            line-height: 25px
-          &:after
-            content: " "
-            background-image: url('images/sprite.png')
-            height: 59px
-            width: 80px
-            position: absolute
-            bottom: 30px
-            left: 50px
-            background-position: -36px 0px
-        div.footer
-          background-image: url('images/contact-back.png')
-          height: 46px
+              float: right
+              font-size: 30px
+              background-color: transparent
+              border: 0px
+              cursor: pointer
+              padding: 0px
+          div.links
+            margin: 130px 0 20px 140px
+            a
+              font-weight: bold
+              font-size: 20px
+              color:#565327
+              display: block
+              line-height: 25px
+            &:after
+              content: " "
+              background-image: url('images/sprite.png')
+              height: 59px
+              width: 80px
+              position: absolute
+              bottom: 30px
+              left: 50px
+              background-position: -36px 0px
+          div.footer
+            background-image: url('images/contact-back.png')
+            height: 46px
 
 @media only screen and (max-height : 800px)
   body
