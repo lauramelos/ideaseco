@@ -30,36 +30,36 @@ body
     div.page.contact
       ul
         h1 Por cualquier consulta, no dudes en comunicarte con nosotros
-          <form method="POST" name="contactform" action="contact-form-handler.php"> 
-          <p>
-          <label for='name'>NOMBRE:</label>
-          <input type="text" name="name">
-          </p>
-          <p>
-          <label for='name'>TELEFONO:</label>
-          <input type="text" name="phone">
-          </p>
-          <p>
-          <label for='email'>E-mail:</label>
-          <input type="text" name="email">
-          </p>
-          <p>
-          <label for='message'>CONSULTA:</label>
-          <textarea name="message"></textarea>
-          </p>
-          <input type="submit" value="ENVIAR"><br>
-          </form>
+        <form method="POST" name="contactform" action="contact-form-handler.php"> 
+        <p>
+        <label for='name'>NOMBRE:</label>
+        <input type="text" name="name">
+        </p>
+        <p>
+        <label for='name'>TELEFONO:</label>
+        <input type="text" name="phone">
+        </p>
+        <p>
+        <label for='email'>E-mail:</label>
+        <input type="text" name="email">
+        </p>
+        <p>
+        <label for='message'>CONSULTA:</label>
+        <textarea name="message"></textarea>
+        </p>
+        <input type="submit" value="ENVIAR"><br>
+        </form>
 
-          script
-            // Code for validating the form
-            var frmvalidator  = new Validator("contactform");
-            frmvalidator.addValidation("name","req","Por favor, ingrese un nombre"); 
-            frmvalidator.addValidation("phone","req","Por favor, ingrese un telefono"); 
-            frmvalidator.addValidation("email","req","Por favor, ingrese un correo electronico"); 
-            frmvalidator.addValidation("email","email","Por favor, ingrese un correo electonico VALIDO"); 
-        div.links
-          a(href="www.ideasecopublicidad.com.ar", title="Ideas ECO")
-            span www.ideasecopublicidad.com.ar
-          a(href="mailto:ventas@ideasecopublicidad.com.ar", title="Mail Ideas ECO")
-            span ventas@ideasecopublicidad.com.ar
+        script
+          // Code for validating the form
+          var frmvalidator  = new Validator("contactform");
+          frmvalidator.addValidation("name","req","Por favor, ingrese un nombre"); 
+          frmvalidator.addValidation("phone","req","Por favor, ingrese un telefono"); 
+          frmvalidator.addValidation("email","req","Por favor, ingrese un correo electronico"); 
+          frmvalidator.addValidation("email","email","Por favor, ingrese un correo electonico VALIDO"); 
+      div.links
+        a(href="www.ideasecopublicidad.com.ar", title="Ideas ECO")
+          span www.ideasecopublicidad.com.ar
+        a(href="mailto:ventas@ideasecopublicidad.com.ar", title="Mail Ideas ECO")
+          span ventas@ideasecopublicidad.com.ar
       div.footer
