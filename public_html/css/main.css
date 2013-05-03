@@ -259,7 +259,7 @@ a.menu-button:hover span:after {
 }
 input[type="submit"].button-light,
 a.link-button-light {
-  font: normal 27px "Helvetica", "Arial", sans-serif;
+  font: normal 27px $main-font;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0.5);
   color: $gray;
@@ -460,7 +460,7 @@ a.link-button-light:hover {
   outline: none;
 }
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: $main-font;
   background-color: #000;
   color: #565327;
   overflow: hidden;
@@ -472,6 +472,11 @@ body a {
 body h1 {
   color: #565327;
   font-size: 20px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+}
+body p {
+  font-family: 'Noto Sans', sans-serif;
 }
 body div.back img {
   display: block;
@@ -566,17 +571,20 @@ body div.container div.page ul h1 {
   font-size: 22px;
   width: 300px;
 }
-body div.container div.page ul h1:before {
+body div.container div.page ul.enhanced:before {
   height: 37px;
   width: 36px;
   background-image: url("images/sprite.png");
   content: " ";
   position: absolute;
   top: 20px;
-  left: 50px;
+  left: 15px;
 }
 body div.container div.page ul:last-child {
   padding: 1px 0px 20px;
+}
+body div.container div.page ul:last-child.enhanced:before {
+  top: 0px;
 }
 body div.container div.page ul li {
   position: relative;
@@ -604,6 +612,8 @@ body div.container div.page.inicio ul p {
   padding: 10px;
   margin: 0px auto;
   font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
 }
 body div.container div.page.quees {
   margin-top: -290px;
@@ -770,7 +780,7 @@ body div.container div.page.contact div.footer {
     left: 50.7%;
   }
   body div.container div.page {
-    width: 420px;
+    width: 440px;
     margin-top: 40px;
   }
   body div.container div.page ul {
@@ -779,9 +789,10 @@ body div.container div.page.contact div.footer {
   body div.container div.page ul p {
     font-size: 14px;
     margin: 13px auto;
+    width: 300px;
   }
   body div.container div.page ul h1 {
-    font-size: 15px;
+    font-size: 16px;
   }
   body div.container div.page ul h1:before {
     top: 15px;

@@ -43,9 +43,13 @@ body
     color: $grey-light
     text-decoration: none
   h1
-
     color: $color-font
     font-size: 20px
+    font-family: $h1-fonts
+    font-weight: 400
+  p
+    font-family: $p-fonts
+
 
   div.back
     img
@@ -125,6 +129,7 @@ body
           font-weight: bold
           font-size: 22px
           width: 300px
+        &.enhanced
           &:before
             height: 37px
             width: 36px
@@ -132,9 +137,12 @@ body
             content: " "
             position: absolute
             top: 20px
-            left: 50px
+            left: 15px
         &:last-child
           padding: 1px 0px 20px
+          &.enhanced
+            &:before
+              top: 0px
         li
           position: relative
           width: 350px
@@ -158,6 +166,8 @@ body
             padding: 10px
             margin: 0px auto
             font-size: 20px
+            font-family: $big-p-fonts
+            font-weight: 500
       &.quees
         margin-top: -290px
         /*background-image: url('images/quees-back.png')*/
@@ -298,15 +308,16 @@ body
     div.container
       left: 50.7%
       div.page
-        width:420px 
+        width:440px 
         margin-top: 40px
         ul
           font-size: 14px
           p
             font-size: 14px
             margin: 13px auto
+            width: 300px
           h1
-            font-size: 15px
+            font-size: 16px
             &:before
               top: 15px
               left: 15px
