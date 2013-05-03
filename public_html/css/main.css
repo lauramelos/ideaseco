@@ -676,9 +676,17 @@ body div.container div.page.tips {
 body div.container div.page.tips ul h1 {
   width: 330px;
 }
-body div.container div.page.tips ul h1:before {
-  background-position: 0 -38px;
-  top: 20px;
+body div.container div.page.tips ul.enhanced:before {
+  background-position: 0px -38px;
+  height: 18px;
+  width: 18px;
+  top: 33px;
+}
+body div.container div.page.tips ul.enhanced p {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 13px;
+  width: 360px;
 }
 body div.container div.page.tips ul li {
   width: 430px;
@@ -720,6 +728,24 @@ body div.container div.page.tips ul li.p4 {
 body div.container div.page.tips ul li.p5 {
   background-image: url("images/ecotips15.png");
   height: 430px;
+}
+body div.container div.page.tips ul p.enhanced {
+  font-size: 14px;
+  width: 72%;
+  font-weight: 600;
+  margin: 60px auto;
+  position: relative;
+  padding-bottom: 60px;
+}
+body div.container div.page.tips ul p.enhanced:after {
+  height: 37px;
+  width: 36px;
+  background-image: url("images/sprite.png");
+  content: " ";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
 }
 body div.container div.page.contact {
   margin-top: -310px;
