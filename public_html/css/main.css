@@ -588,13 +588,20 @@ body div.container div.page ul p {
   text-align: center;
 }
 body div.container div.page.inicio ul {
-  padding: 20px 0px;
+  padding: 35px 0px;
 }
 body div.container div.page.inicio ul li.inicio {
   background-image: url("images/inicio.png");
   height: 400px;
   width: 300px;
   margin: 30px auto;
+}
+body div.container div.page.inicio ul p {
+  width: 80%;
+  border: 2px solid #96ba20;
+  padding: 10px;
+  margin: 0px auto;
+  font-size: 20px;
 }
 body div.container div.page.como ul p {
   background-image: url("images/recuadro.png");
@@ -608,12 +615,12 @@ body div.container div.page.como ul li {
   line-height: 22px;
 }
 body div.container div.page.como ul li:before {
-  height: 22px;
-  width: 22px;
+  height: 18px;
+  width: 18px;
   background-image: url("images/sprite.png");
   content: " ";
   position: absolute;
-  top: 20px;
+  top: 24px;
   left: -34px;
   background-position: 0 -38px;
 }
@@ -699,7 +706,7 @@ body div.container div.page.contact ul form p textarea {
   height: 20px;
 }
 body div.container div.page.contact ul form p textarea {
-  height: 150px;
+  height: 149px;
 }
 body div.container div.page.contact ul form input[type=submit] {
   font-weight: bold;
@@ -713,17 +720,17 @@ body div.container div.page.contact ul form input[type=submit] {
   cursor: pointer;
   padding: 0px;
 }
-body div.container div.page.contact ul div.links {
-  margin: 130px 0 20px 140px;
+body div.container div.page.contact ul.links {
+  padding: 130px 0 20px 140px;
 }
-body div.container div.page.contact ul div.links a {
+body div.container div.page.contact ul.links a {
   font-weight: bold;
   font-size: 20px;
   color: #565327;
   display: block;
   line-height: 25px;
 }
-body div.container div.page.contact ul div.links:after {
+body div.container div.page.contact ul.links:after {
   content: " ";
   background-image: url("images/sprite.png");
   height: 59px;
@@ -733,7 +740,7 @@ body div.container div.page.contact ul div.links:after {
   left: 50px;
   background-position: -36px 0px;
 }
-body div.container div.page.contact ul div.footer {
+body div.container div.page.contact div.footer {
   background-image: url("images/contact-back.png");
   height: 46px;
 }
@@ -763,7 +770,7 @@ body div.container div.page.contact ul div.footer {
   }
   body div.container div.page.inicio ul li.inicio {
     background-image: url("images/inicio2.png");
-    height: 326px;
+    height: 370px;
     width: 240px;
     margin: 10px auto;
   }
@@ -805,9 +812,9 @@ body div.container div.page.contact ul div.footer {
   body div.container div.page.contact {
     height: 498px;
   }
-  body div.container div.page.contact h1 {
-    font-size: 11px;
-    width: 310px;
+  body div.container div.page.contact ul h1 {
+    font-size: 14px;
+    width: 412px;
     padding: 20px 0 0;
   }
   body div.container div.page.contact form {
@@ -825,15 +832,16 @@ body div.container div.page.contact ul div.footer {
   body div.container div.page.contact form a.enviar {
     font-size: 24px;
   }
-  body div.container div.page.contact form div.links {
-    margin: 81px 0 0 85px;
+  body div.container div.page.contact ul.links {
+    padding: 20px 0 15px 120px;
   }
-  body div.container div.page.contact form div.links a {
+  body div.container div.page.contact ul.links a {
     font-size: 16px;
     line-height: 23px;
   }
-  body div.container div.page.contact form div.links:after {
-    left: 35px;
+  body div.container div.page.contact ul.links:after {
+    left: 25px;
+    bottom: 5px;
   }
   body ul.menu {
     width: 220.00000000471428px;

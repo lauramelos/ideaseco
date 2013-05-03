@@ -144,12 +144,18 @@ body
           text-align: center
       &.inicio
         ul
-          padding: 20px 0px
+          padding: 35px 0px
           li.inicio
             background-image: url('images/inicio.png')
             height: 400px
             width: 300px
             margin: 30px auto
+          p
+            width: 80%
+            border: 2px solid #96ba20
+            padding: 10px
+            margin: 0px auto
+            font-size: 20px
       &.quees
         /*background-image: url('images/quees-back.png')*/
       &.como
@@ -163,12 +169,12 @@ body
           li
             padding: 20px 0px
             &:before
-              height: 22px
-              width: 22px
+              height: 18px
+              width: 18px
               background-image: url('images/sprite.png')
               content: " "
               position: absolute
-              top: 20px
+              top: 24px
               left: -34px
               background-position: 0 -38px
             height: 60px
@@ -242,7 +248,7 @@ body
                 width:100%
                 height: 20px
               textarea
-                height: 150px
+                height: 149px
             input[type=submit]
               font-weight: bold
               font-size: 20px
@@ -254,26 +260,26 @@ body
               border: 0px
               cursor: pointer
               padding: 0px
-          div.links
-            margin: 130px 0 20px 140px
-            a
-              font-weight: bold
-              font-size: 20px
-              color:#565327
-              display: block
-              line-height: 25px
-            &:after
-              content: " "
-              background-image: url('images/sprite.png')
-              height: 59px
-              width: 80px
-              position: absolute
-              bottom: 30px
-              left: 50px
-              background-position: -36px 0px
-          div.footer
-            background-image: url('images/contact-back.png')
-            height: 46px
+        ul.links
+          padding: 130px 0 20px 140px
+          a
+            font-weight: bold
+            font-size: 20px
+            color:#565327
+            display: block
+            line-height: 25px
+          &:after
+            content: " "
+            background-image: url('images/sprite.png')
+            height: 59px
+            width: 80px
+            position: absolute
+            bottom: 30px
+            left: 50px
+            background-position: -36px 0px
+        div.footer
+          background-image: url('images/contact-back.png')
+          height: 46px
 
 @media only screen and (max-height : 800px)
   body
@@ -296,7 +302,7 @@ body
           margin-top: 9%
           ul li.inicio
             background-image: url('images/inicio2.png')
-            height: 326px
+            height: 370px
             width: 240px
             margin: 10px auto
         &.quees
@@ -330,10 +336,11 @@ body
 
         &.contact
           height: 498px
-          h1
-            font-size: 11px
-            width: 310px
-            padding: 20px 0 0
+          ul
+            h1
+              font-size: 14px
+              width: 412px
+              padding: 20px 0 0
           form
             width: 80%
             margin: 20px auto 0px
@@ -345,13 +352,14 @@ body
                 height: 130px
             a.enviar
               font-size: 24px
-            div.links
-              margin: 81px 0 0 85px
-              a
-                font-size: 16px
-                line-height: 23px
-              &:after
-                left: 35px
+          ul.links
+            padding: 20px 0 15px 120px
+            a
+              font-size: 16px
+              line-height: 23px
+            &:after
+              left: 25px
+              bottom: 5px
 
     ul.menu
       $h = 1.2727272727
