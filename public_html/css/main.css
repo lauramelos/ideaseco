@@ -468,6 +468,7 @@ body {
 body a {
   color: #d0d0d0;
   text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
 }
 body h1 {
   color: #565327;
@@ -475,8 +476,16 @@ body h1 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
 }
-body p {
+body p,
+body label {
   font-family: 'Noto Sans', sans-serif;
+}
+body b,
+body i {
+  font-weight: bold;
+}
+body i {
+  color: #008000;
 }
 body div.back img {
   display: block;
@@ -563,7 +572,7 @@ body div.container div.page ul {
   background-image: url("images/bg-pix.png");
   background-repeat: repeat;
   position: relative;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 body div.container div.page ul h1 {
   margin: 0 auto;
@@ -597,6 +606,15 @@ body div.container div.page ul p {
   line-height: 20px;
   text-align: center;
 }
+body div.container div.page ul p.enhanced {
+  width: 80%;
+  border: 2px solid #96ba20;
+  padding: 10px;
+  margin: 0px auto;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
 body div.container div.page.inicio ul {
   padding: 35px 0px;
 }
@@ -606,15 +624,6 @@ body div.container div.page.inicio ul li.inicio {
   width: 300px;
   margin: 30px auto;
 }
-body div.container div.page.inicio ul p {
-  width: 80%;
-  border: 2px solid #96ba20;
-  padding: 10px;
-  margin: 0px auto;
-  font-size: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-}
 body div.container div.page.quees {
   margin-top: -290px;
 /*background-image: url('images/quees-back.png')*/
@@ -622,12 +631,6 @@ body div.container div.page.quees {
 body div.container div.page.como {
   margin-top: -270px;
 /*background-image: url('images/como-back.png')*/
-}
-body div.container div.page.como ul p {
-  background-image: url("images/recuadro.png");
-  height: 145px;
-  width: 400px;
-  padding: 35px;
 }
 body div.container div.page.como ul li {
   padding: 20px 0px;
@@ -643,6 +646,18 @@ body div.container div.page.como ul li:before {
   top: 24px;
   left: -34px;
   background-position: 0 -38px;
+}
+body div.container div.page.como ul li p {
+  margin: 0px;
+  line-height: auto;
+  text-align: left;
+}
+body div.container div.page.como ul p.enhanced {
+  font-size: 16px;
+  font-weight: 600;
+}
+body div.container div.page.como ul:last-child {
+  padding: 30px 0px 50px;
 }
 body div.container div.page.tips {
   margin-top: 0px;
@@ -750,6 +765,7 @@ body div.container div.page.contact ul form input[type=submit] {
   border: 0px;
   cursor: pointer;
   padding: 0px;
+  font-family: 'Fjalla One', sans-serif;
 }
 body div.container div.page.contact ul.links {
   padding: 130px 0 20px 140px;
@@ -808,10 +824,10 @@ body div.container div.page.contact div.footer {
     margin: 10px auto;
   }
   body div.container div.page.quees {
-    margin-top: -290px;
+    margin-top: -330px;
   }
   body div.container div.page.como {
-    margin-top: -270px;
+    margin-top: -300px;
   }
   body div.container div.page.como ul li {
     height: 50px;
