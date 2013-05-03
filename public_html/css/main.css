@@ -660,6 +660,14 @@ body div.container div.page.tips ul li.p3 {
   background-image: url("images/ecotips13.png");
   height: 574px;
 }
+body div.container div.page.tips ul li.p3 div.botas {
+  background-image: url("images/sprite2.png");
+  width: 89px;
+  height: 144px;
+  position: absolute;
+  right: -25px;
+  top: 100px;
+}
 body div.container div.page.tips ul li.p4 {
   background-image: url("images/ecotips14.png");
   height: 636px;
@@ -801,6 +809,10 @@ body div.container div.page.contact div.footer {
     background-image: url("images/ecotips23.png");
     height: 413px;
   }
+  body div.container div.page.tips ul li.p3 div.botas {
+    top: 100px;
+    right: -25px;
+  }
   body div.container div.page.tips ul li.p4 {
     background-image: url("images/ecotips24.png");
     height: 458px;
@@ -833,14 +845,14 @@ body div.container div.page.contact div.footer {
     font-size: 24px;
   }
   body div.container div.page.contact ul.links {
-    padding: 20px 0 15px 120px;
+    padding: 20px 0 15px 105px;
   }
   body div.container div.page.contact ul.links a {
     font-size: 16px;
     line-height: 23px;
   }
   body div.container div.page.contact ul.links:after {
-    left: 25px;
+    left: 15px;
     bottom: 5px;
   }
   body ul.menu {
