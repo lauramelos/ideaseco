@@ -490,8 +490,6 @@ body i {
 body div.back img {
   display: block;
   height: auto;
-  max-height: 100%;
-  max-width: 100%;
   width: 100%;
   position: relative;
 }
