@@ -690,8 +690,8 @@ body div.container div.page.tips ul.enhanced:before {
 body div.container div.page.tips ul.enhanced p {
   margin: 0 auto;
   text-align: left;
-  font-size: 13px;
-  width: 360px;
+  font-size: 15px;
+  width: 460px;
 }
 body div.container div.page.tips ul li {
   width: 430px;
@@ -880,6 +880,10 @@ body div.container div.page.contact div.footer {
   }
   body div.container div.page.como ul li:before {
     left: -25px;
+  }
+  body div.container div.page.tips ul.enhanced p {
+    width: 360px;
+    font-size: 13px;
   }
   body div.container div.page.tips ul li {
     width: 310px;
