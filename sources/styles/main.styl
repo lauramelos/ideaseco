@@ -122,12 +122,16 @@ body
         &:hover
           background-position: 279px -652px
 
+  .box .antiscroll-inner
+  .box
+    height: 100%
+    width: 580px
+
   div.container
     position: absolute
     left: 50.7%
     top: 0px
-    overflow-y: visible
-    overflow-x: hidden
+    overflow: hidden
     height: 100%
 
     div.page
@@ -179,17 +183,18 @@ body
 
       &.inicio
         ul
+          margin-top: -370px
           padding: 35px 0px
           li.inicio
             background-image: url('images/inicio.png')
-            height: 400px
+            height: 460px
             width: 300px
             margin: 30px auto
       &.quees
-        margin-top: -290px
+        margin-top: -360px
         /*background-image: url('images/quees-back.png')*/
       &.como
-        margin-top: -270px
+        margin-top: -320px
         /*background-image: url('images/como-back.png')*/
         ul
           li
@@ -283,7 +288,7 @@ body
               margin-left: -16px
 
       &.contact
-        margin-top: -310px
+        margin-top: -380px
         ul
           p.thanks
             padding: 200px 0
@@ -352,6 +357,12 @@ body
 
 @media only screen and (max-height : 800px)
   body
+
+    .box .antiscroll-inner
+    .box
+      height: 100%
+      width: 440px
+
     div.container
       left: 50.7%
       div.page

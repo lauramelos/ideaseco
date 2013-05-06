@@ -564,12 +564,16 @@ body ul.menu li.tips.current,
 body ul.menu li.tips:hover {
   background-position: 279px -652px;
 }
+body .box .antiscroll-inner,
+body .box {
+  height: 100%;
+  width: 580px;
+}
 body div.container {
   position: absolute;
   left: 50.7%;
   top: 0px;
-  overflow-y: visible;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100%;
 }
 body div.container div.page {
@@ -626,20 +630,21 @@ body div.container div.page ul p.enhanced {
   font-weight: 500;
 }
 body div.container div.page.inicio ul {
+  margin-top: -370px;
   padding: 35px 0px;
 }
 body div.container div.page.inicio ul li.inicio {
   background-image: url("images/inicio.png");
-  height: 400px;
+  height: 460px;
   width: 300px;
   margin: 30px auto;
 }
 body div.container div.page.quees {
-  margin-top: -290px;
+  margin-top: -360px;
 /*background-image: url('images/quees-back.png')*/
 }
 body div.container div.page.como {
-  margin-top: -270px;
+  margin-top: -320px;
 /*background-image: url('images/como-back.png')*/
 }
 body div.container div.page.como ul li {
@@ -748,7 +753,7 @@ body div.container div.page.tips ul p.enhanced:after {
   margin-left: -16px;
 }
 body div.container div.page.contact {
-  margin-top: -310px;
+  margin-top: -380px;
 }
 body div.container div.page.contact ul p.thanks {
   padding: 200px 0;
@@ -828,6 +833,11 @@ body div.container div.page.contact div.footer {
   height: 46px;
 }
 @media only screen and (max-height : 800px) {
+  body .box .antiscroll-inner,
+  body .box {
+    height: 100%;
+    width: 440px;
+  }
   body div.container {
     left: 50.7%;
   }
