@@ -259,7 +259,7 @@ a.menu-button:hover span:after {
 }
 input[type="submit"].button-light,
 a.link-button-light {
-  font: normal 27px $main-font;
+  font: normal 27px 'Noto Sans', 'Quicksand', "Arial", sans-serif;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0.5);
   color: $gray;
@@ -460,7 +460,7 @@ a.link-button-light:hover {
   outline: none;
 }
 body {
-  font-family: $main-font;
+  font-family: 'Noto Sans', 'Quicksand', "Arial", sans-serif;
   background-color: #000;
   color: #565327;
   overflow: hidden;
@@ -589,7 +589,6 @@ body div.container div.page ul {
 body div.container div.page ul h1 {
   margin: 0 auto;
   font-weight: bold;
-  font-size: 22px;
   width: 300px;
 }
 body div.container div.page ul.enhanced:before {
@@ -598,8 +597,8 @@ body div.container div.page ul.enhanced:before {
   background-image: url("images/sprite.png");
   content: " ";
   position: absolute;
-  top: 20px;
-  left: 15px;
+  top: 15px;
+  left: 35px;
 }
 body div.container div.page ul:last-child {
   padding: 1px 0px 20px;
@@ -619,11 +618,10 @@ body div.container div.page ul p {
   text-align: center;
 }
 body div.container div.page ul p.enhanced {
-  width: 80%;
+  width: 68%;
   border: 2px solid #96ba20;
-  padding: 10px;
+  padding: 20px;
   margin: 0px auto;
-  font-size: 20px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
 }
@@ -668,7 +666,6 @@ body div.container div.page.como ul li p {
   text-align: left;
 }
 body div.container div.page.como ul p.enhanced {
-  font-size: 16px;
   font-weight: 600;
 }
 body div.container div.page.como ul:last-child {
@@ -735,7 +732,6 @@ body div.container div.page.tips ul li.p5 {
   height: 430px;
 }
 body div.container div.page.tips ul p.enhanced {
-  font-size: 14px;
   width: 72%;
   font-weight: 600;
   margin: 60px auto;
@@ -833,6 +829,13 @@ body div.container div.page.contact div.footer {
   height: 46px;
 }
 @media only screen and (max-height : 800px) {
+  body h1 {
+    font-size: 12px;
+  }
+  body p {
+    font-size: 12px;
+    width: 260px;
+  }
   body .box .antiscroll-inner,
   body .box {
     height: 100%;
@@ -845,16 +848,12 @@ body div.container div.page.contact div.footer {
     width: 440px;
     margin-top: 40px;
   }
-  body div.container div.page ul {
-    font-size: 14px;
-  }
   body div.container div.page ul p {
-    font-size: 14px;
-    margin: 13px auto;
-    width: 300px;
+    margin: 0px auto;
+    width: 260px;
   }
   body div.container div.page ul h1 {
-    font-size: 16px;
+    width: 250px;
   }
   body div.container div.page ul h1:before {
     top: 15px;
@@ -876,7 +875,8 @@ body div.container div.page.contact div.footer {
     margin-top: -300px;
   }
   body div.container div.page.como ul li {
-    height: 50px;
+    height: 45px;
+    width: 260px;
   }
   body div.container div.page.como ul li:before {
     left: -25px;
@@ -917,7 +917,6 @@ body div.container div.page.contact div.footer {
     margin-top: -310px;
   }
   body div.container div.page.contact ul h1 {
-    font-size: 14px;
     width: 412px;
     padding: 20px 0 0;
   }

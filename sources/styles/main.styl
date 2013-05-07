@@ -145,7 +145,6 @@ body
         h1
           margin: 0 auto
           font-weight: bold
-          font-size: 22px
           width: 300px
         &.enhanced
           &:before
@@ -154,8 +153,8 @@ body
             background-image: url('images/sprite.png')
             content: " "
             position: absolute
-            top: 20px
-            left: 15px
+            top: 15px
+            left: 35px
         &:last-child
           padding: 1px 0px 20px
           &.enhanced
@@ -171,11 +170,10 @@ body
           line-height: 20px
           text-align: center
         p.enhanced
-          width: 80%
+          width: 68%
           border: 2px solid #96ba20
-          padding: 10px
+          padding: 20px
           margin: 0px auto
-          font-size: 20px
           font-family: $big-p-fonts
           font-weight: 500
 
@@ -213,7 +211,6 @@ body
               line-height: auto
               text-align: left
           p.enhanced
-            font-size: 16px
             font-weight: 600
           &:last-child
             padding: 30px 0px 50px
@@ -269,7 +266,6 @@ body
               background-image: url('images/ecotips15.png')
               height: 430px
           p.enhanced
-            font-size: 14px
             width: 72%
             font-weight: 600
             margin: 60px auto
@@ -356,6 +352,12 @@ body
 @media only screen and (max-height : 800px)
   body
 
+    h1
+      font-size: 12px
+    p
+      font-size: 12px
+      width: 260px
+
     .box .antiscroll-inner
     .box
       height: 100%
@@ -367,13 +369,11 @@ body
         width:440px 
         margin-top: 40px
         ul
-          font-size: 14px
           p
-            font-size: 14px
-            margin: 13px auto
-            width: 300px
+            margin: 0px auto
+            width: 260px
           h1
-            font-size: 16px
+            width: 250px
             &:before
               top: 15px
               left: 15px
@@ -391,7 +391,8 @@ body
           margin-top: -300px
           ul 
             li
-              height: 50px
+              height: 45px
+              width: 260px
             li:before
               left: -25px
         &.tips
@@ -426,7 +427,6 @@ body
           margin-top: -310px
           ul
             h1
-              font-size: 14px
               width: 412px
               padding: 20px 0 0
           form
