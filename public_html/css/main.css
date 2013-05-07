@@ -627,8 +627,10 @@ body div.container div.page ul p.enhanced {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
 }
-body div.container div.page.inicio ul {
+body div.container div.page.inicio {
   margin-top: -370px;
+}
+body div.container div.page.inicio ul {
   padding: 35px 0px;
 }
 body div.container div.page.inicio ul li.inicio {
