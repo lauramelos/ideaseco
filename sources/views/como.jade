@@ -8,7 +8,15 @@ html(lang="en")
     title #{title}
     meta(name="viewport", content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0")
     meta(property="og:title", content="Ideas ECO")
-   link(rel="shorcut icon", href="favicon.ico")
+    link(rel="shorcut icon", href="favicon.ico")
+    link(href="antiscroll.css", rel="stylesheet")
+    script(src="deps/jquery.js")
+    script(src="deps/jquery-mousewheel.js")
+    script(src="antiscroll.js")
+    script
+      $(function() {
+        $('.antiscroll-wrap').antiscroll();
+      });
 
 body
   div.back
@@ -26,32 +34,33 @@ body
     li.tips
       a(href="tips.html") ECO TIPS
 
-  div.container
-    div.page.como
-      ul.enhanced
-        h1 Tiraje, distribuci&oacute;n y log&iacute;stica.
-        li 
-          p Edici&oacute;n Quincenal.
-        li 
-          p Tiraje de 30.000 unidades.
-        li 
-          p 
-            b Fecha de cierre 
-            | de cada edici&oacute;n: 30 y 15 de cada mes.
-        li 
-          p
-            | La 
-            b publicaci&oacute;n 
-            | se realiza despu&eacute;s de 15
-            | d&iacute;as de cierre del edici&oacute;n.
-        li 
-          p La 
-            b distribuci&oacute;n 
-            | se realiza 16 y 17, 1 y 2 de cada mes.
-        li 
-          p Los ejemplares a distribuir por punto de reparto a convenir.
-      ul
-          p.enhanced
-            | Realizamos un tiraje de 30.000 ejemplares llega a cada hogar
-            | a un promedio de 4 peronas considerando que su anuncio
-            | es visto por 120.000 personas.
+  div.container.box-wrap.antiscroll-wrap
+    div.box
+      div.page.como.antiscroll-inner
+        ul.enhanced
+          h1 Tiraje, distribuci&oacute;n y log&iacute;stica.
+          li 
+            p Edici&oacute;n Quincenal.
+          li 
+            p Tiraje de 30.000 unidades.
+          li 
+            p 
+              b Fecha de cierre 
+              | de cada edici&oacute;n: 30 y 15 de cada mes.
+          li 
+            p
+              | La 
+              b publicaci&oacute;n 
+              | se realiza despu&eacute;s de 15
+              | d&iacute;as de cierre del edici&oacute;n.
+          li 
+            p La 
+              b distribuci&oacute;n 
+              | se realiza 16 y 17, 1 y 2 de cada mes.
+          li 
+            p Los ejemplares a distribuir por punto de reparto a convenir.
+        ul
+            p.enhanced
+              | Realizamos un tiraje de 30.000 ejemplares llega a cada hogar
+              | a un promedio de 4 peronas considerando que su anuncio
+              | es visto por 120.000 personas.

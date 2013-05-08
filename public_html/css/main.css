@@ -472,13 +472,17 @@ body a {
 }
 body h1 {
   color: #565327;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: bold;
+  width: 80%;
 }
 body p,
 body label {
+  font-size: 16px;
+  line-height: 20px;
   font-family: 'Noto Sans', sans-serif;
+  width: 80%;
 }
 body b,
 body i {
@@ -490,8 +494,9 @@ body i {
 body div.back img {
   display: block;
   height: auto;
-  width: 100%;
-  position: relative;
+  position: absolute;
+  max-height: 100%;
+  right: 0px;
 }
 body a.ingresar {
   height: 300px;
@@ -565,31 +570,34 @@ body ul.menu li.tips:hover {
 body .box .antiscroll-inner,
 body .box {
   height: 100%;
-  width: 580px;
+  width: 100%;
 }
 body div.container {
-  position: absolute;
-  left: 50.7%;
-  top: 0px;
-  overflow: hidden;
-  height: 100%;
-}
-body div.container div.page {
-  width: 580px;
-  margin-top: 60px;
-  position: relative;
-  top: 50%;
-}
-body div.container div.page ul {
   background-image: url("images/bg-pix.png");
   background-repeat: repeat;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  overflow: hidden;
+  height: 80%;
+  width: 40%;
+}
+body div.container div.page {
   position: relative;
-  padding: 30px 0;
+}
+body div.container div.page ul {
+  position: relative;
+  padding: 10% 0;
 }
 body div.container div.page ul h1 {
-  margin: 0 auto;
-  font-weight: bold;
-  width: 300px;
+  margin: 0px auto;
+}
+body div.container div.page ul.enhanced {
+  width: 100%;
+}
+body div.container div.page ul.enhanced h1 {
+  width: 66%;
+  margin: 2% auto;
 }
 body div.container div.page ul.enhanced:before {
   height: 37px;
@@ -597,36 +605,30 @@ body div.container div.page ul.enhanced:before {
   background-image: url("images/sprite.png");
   content: " ";
   position: absolute;
-  top: 15px;
-  left: 35px;
+  left: 6%;
 }
-body div.container div.page ul:last-child {
-  padding: 1px 0px 20px;
-}
-body div.container div.page ul:last-child.enhanced:before {
-  top: 0px;
+body div.container div.page ul:first-child {
+  padding: 10% 0px 1px;
 }
 body div.container div.page ul li {
   position: relative;
-  width: 350px;
+  width: 66%;
   margin: 0 auto;
 }
 body div.container div.page ul p {
-  width: 350px;
-  margin: 25px auto;
-  line-height: 20px;
+  width: 100%;
+  margin: 5% auto;
   text-align: center;
+}
+body div.container div.page ul p.nom {
+  margin: 0px auto 25px;
 }
 body div.container div.page ul p.enhanced {
   width: 68%;
   border: 2px solid #96ba20;
   padding: 20px;
-  margin: 0px auto;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
-}
-body div.container div.page.inicio {
-  margin-top: -370px;
 }
 body div.container div.page.inicio ul {
   padding: 35px 0px;
@@ -636,14 +638,6 @@ body div.container div.page.inicio ul li.inicio {
   height: 460px;
   width: 300px;
   margin: 30px auto;
-}
-body div.container div.page.quees {
-  margin-top: -360px;
-/*background-image: url('images/quees-back.png')*/
-}
-body div.container div.page.como {
-  margin-top: -320px;
-/*background-image: url('images/como-back.png')*/
 }
 body div.container div.page.como ul li {
   padding: 20px 0px;
@@ -682,18 +676,15 @@ body div.container div.page.tips ul.enhanced:before {
   background-position: 0px -38px;
   height: 18px;
   width: 18px;
-  top: 33px;
 }
 body div.container div.page.tips ul.enhanced p {
   margin: 0 auto;
   text-align: left;
-  font-size: 15px;
-  width: 460px;
 }
-body div.container div.page.tips ul li {
+body div.container div.page.tips ul li.text {
   width: 430px;
 }
-body div.container div.page.tips ul li p {
+body div.container div.page.tips ul li.text p {
   background-color: #faf0d4;
   width: 50%;
   position: absolute;
@@ -703,19 +694,19 @@ body div.container div.page.tips ul li p {
   padding: 10px;
   margin: 0px;
 }
-body div.container div.page.tips ul li.p1 {
+body div.container div.page.tips ul li.text.p1 {
   background-image: url("images/ecotips11.png");
   height: 538px;
 }
-body div.container div.page.tips ul li.p2 {
+body div.container div.page.tips ul li.text.p2 {
   background-image: url("images/ecotips12.png");
   height: 660px;
 }
-body div.container div.page.tips ul li.p3 {
+body div.container div.page.tips ul li.text.p3 {
   background-image: url("images/ecotips13.png");
   height: 574px;
 }
-body div.container div.page.tips ul li.p3 div.botas {
+body div.container div.page.tips ul li.text.p3 div.botas {
   background-image: url("images/sprite2.png");
   width: 89px;
   height: 144px;
@@ -723,11 +714,11 @@ body div.container div.page.tips ul li.p3 div.botas {
   right: -25px;
   top: 100px;
 }
-body div.container div.page.tips ul li.p4 {
+body div.container div.page.tips ul li.text.p4 {
   background-image: url("images/ecotips14.png");
   height: 636px;
 }
-body div.container div.page.tips ul li.p5 {
+body div.container div.page.tips ul li.text.p5 {
   background-image: url("images/ecotips15.png");
   height: 430px;
 }
@@ -748,21 +739,11 @@ body div.container div.page.tips ul p.enhanced:after {
   left: 50%;
   margin-left: -16px;
 }
-body div.container div.page.contact {
-  margin-top: -380px;
-}
 body div.container div.page.contact ul p.thanks {
   padding: 200px 0;
 }
 body div.container div.page.contact ul h1 {
-  font-size: 17px;
-  font-weight: bold;
-  width: 500px;
-  margin: 0 auto;
-  padding: 50px 0 0;
-}
-body div.container div.page.contact ul h1:before {
-  display: none;
+  padding: 2% 0 1%;
 }
 body div.container div.page.contact ul form {
   font-size: 12px;
@@ -771,14 +752,12 @@ body div.container div.page.contact ul form {
   margin: 0px auto;
 }
 body div.container div.page.contact ul form p {
-  font-size: 14px;
   line-height: 16px;
   text-align: left;
   margin: 0px;
   width: 100%;
 }
 body div.container div.page.contact ul form p label {
-  font-size: 14px;
   display: block;
 }
 body div.container div.page.contact ul form p input,
@@ -832,47 +811,17 @@ body div.container div.page.contact div.footer {
   body h1 {
     font-size: 12px;
   }
-  body p {
+  body p,
+  body label {
     font-size: 12px;
-    width: 260px;
+    line-height: 16px;
   }
-  body .box .antiscroll-inner,
-  body .box {
-    height: 100%;
-    width: 440px;
-  }
-  body div.container {
-    left: 50.7%;
-  }
-  body div.container div.page {
-    width: 440px;
-    margin-top: 40px;
-  }
-  body div.container div.page ul p {
-    margin: 0px auto;
-    width: 260px;
-  }
-  body div.container div.page ul h1 {
-    width: 250px;
-  }
-  body div.container div.page ul h1:before {
-    top: 15px;
-    left: 15px;
-  }
-  body div.container div.page.inicio {
-    margin-top: -260px;
-  }
+  body div.container div.page ul ul li.inicio,
   body div.container div.page.inicio ul li.inicio {
     background-image: url("images/inicio2.png");
     height: 370px;
     width: 240px;
     margin: 10px auto;
-  }
-  body div.container div.page.quees {
-    margin-top: -330px;
-  }
-  body div.container div.page.como {
-    margin-top: -300px;
   }
   body div.container div.page.como ul li {
     height: 45px;
@@ -881,43 +830,42 @@ body div.container div.page.contact div.footer {
   body div.container div.page.como ul li:before {
     left: -25px;
   }
-  body div.container div.page.tips ul.enhanced p {
-    width: 360px;
-    font-size: 13px;
-  }
-  body div.container div.page.tips ul li {
+  body div.container div.page.tips ul.enhanced,
+  body div.container div.page.tips ul li.text {
     width: 310px;
   }
-  body div.container div.page.tips ul li.p1 {
+  body div.container div.page.tips ul.enhanced.p1,
+  body div.container div.page.tips ul li.text.p1 {
     background-image: url("images/ecotips21.png");
     height: 388px;
   }
-  body div.container div.page.tips ul li.p2 {
+  body div.container div.page.tips ul.enhanced.p2,
+  body div.container div.page.tips ul li.text.p2 {
     background-image: url("images/ecotips22.png");
     height: 476px;
   }
-  body div.container div.page.tips ul li.p3 {
+  body div.container div.page.tips ul.enhanced.p3,
+  body div.container div.page.tips ul li.text.p3 {
     background-image: url("images/ecotips23.png");
     height: 413px;
   }
-  body div.container div.page.tips ul li.p3 div.botas {
+  body div.container div.page.tips ul.enhanced.p3 div.botas,
+  body div.container div.page.tips ul li.text.p3 div.botas {
     top: 100px;
     right: -25px;
   }
-  body div.container div.page.tips ul li.p4 {
+  body div.container div.page.tips ul.enhanced.p4,
+  body div.container div.page.tips ul li.text.p4 {
     background-image: url("images/ecotips24.png");
     height: 458px;
   }
-  body div.container div.page.tips ul li.p5 {
+  body div.container div.page.tips ul.enhanced.p5,
+  body div.container div.page.tips ul li.text.p5 {
     background-image: url("images/ecotips25.png");
     height: 310px;
   }
-  body div.container div.page.contact {
-    height: 498px;
-    margin-top: -310px;
-  }
   body div.container div.page.contact ul h1 {
-    width: 412px;
+    width: 80%;
     padding: 20px 0 0;
   }
   body div.container div.page.contact form {

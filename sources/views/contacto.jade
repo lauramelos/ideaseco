@@ -10,6 +10,14 @@ html(lang="en")
     meta(property="og:title", content="Ideas ECO")
     link(rel="shorcut icon", href="favicon.ico")
     link(href="http://fonts.googleapis.com/css?family=Noto+Sans|Quicksand|Fjalla+One", rel="stylesheet", type="text/css")
+    link(href="antiscroll.css", rel="stylesheet")
+    script(src="deps/jquery.js")
+    script(src="deps/jquery-mousewheel.js")
+    script(src="antiscroll.js")
+    script
+      $(function() {
+        $('.antiscroll-wrap').antiscroll();
+      });
 
 body
   div.back
@@ -27,40 +35,41 @@ body
     li.tips
       a(href="tips.html") ECO TIPS
 
-  div.container
-    div.page.contact
-      ul
-        h1 Por cualquier consulta, no dudes en comunicarte con nosotros
-        <form method="POST" name="contactform" action="contact-form-handler.php"> 
-        <p>
-        <label for='name'>NOMBRE:</label>
-        <input type="text" name="name">
-        </p>
-        <p>
-        <label for='name'>TELEFONO:</label>
-        <input type="text" name="phone">
-        </p>
-        <p>
-        <label for='email'>E-mail:</label>
-        <input type="text" name="email">
-        </p>
-        <p>
-        <label for='message'>CONSULTA:</label>
-        <textarea name="message"></textarea>
-        </p>
-        <input type="submit" value="ENVIAR"><br>
-        </form>
+  div.container.box-wrap.antiscroll-wrap
+    div.box
+      div.page.contact.antiscroll-inner
+        ul
+          h1 Por cualquier consulta, no dudes en comunicarte con nosotros
+          <form method="POST" name="contactform" action="contact-form-handler.php"> 
+          <p>
+          <label for='name'>NOMBRE:</label>
+          <input type="text" name="name">
+          </p>
+          <p>
+          <label for='name'>TELEFONO:</label>
+          <input type="text" name="phone">
+          </p>
+          <p>
+          <label for='email'>E-mail:</label>
+          <input type="text" name="email">
+          </p>
+          <p>
+          <label for='message'>CONSULTA:</label>
+          <textarea name="message"></textarea>
+          </p>
+          <input type="submit" value="ENVIAR"><br>
+          </form>
 
-        script
-          // Code for validating the form
-          var frmvalidator  = new Validator("contactform");
-          frmvalidator.addValidation("name","req","Por favor, ingrese un nombre"); 
-          frmvalidator.addValidation("phone","req","Por favor, ingrese un telefono"); 
-          frmvalidator.addValidation("email","req","Por favor, ingrese un correo electronico"); 
-          frmvalidator.addValidation("email","email","Por favor, ingrese un correo electonico VALIDO"); 
-      ul.links
-        a(href="www.ideasecopublicidad.com.ar", title="Ideas ECO")
-          span www.ideasecopublicidad.com.ar
-        a(href="mailto:ventas@ideasecopublicidad.com.ar", title="Mail Ideas ECO")
-          span ventas@ideasecopublicidad.com.ar
-      div.footer
+          script
+            // Code for validating the form
+            var frmvalidator  = new Validator("contactform");
+            frmvalidator.addValidation("name","req","Por favor, ingrese un nombre"); 
+            frmvalidator.addValidation("phone","req","Por favor, ingrese un telefono"); 
+            frmvalidator.addValidation("email","req","Por favor, ingrese un correo electronico"); 
+            frmvalidator.addValidation("email","email","Por favor, ingrese un correo electonico VALIDO"); 
+        ul.links
+          a(href="www.ideasecopublicidad.com.ar", title="Ideas ECO")
+            span www.ideasecopublicidad.com.ar
+          a(href="mailto:ventas@ideasecopublicidad.com.ar", title="Mail Ideas ECO")
+            span ventas@ideasecopublicidad.com.ar
+        div.footer

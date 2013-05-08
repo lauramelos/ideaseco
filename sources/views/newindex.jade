@@ -9,6 +9,14 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0")
     meta(property="og:title", content="Ideas ECO")
     link(rel="shorcut icon", href="favicon.ico")
+    link(href="antiscroll.css", rel="stylesheet")
+    script(src="deps/jquery.js")
+    script(src="deps/jquery-mousewheel.js")
+    script(src="antiscroll.js")
+    script
+      $(function() {
+        $('.antiscroll-wrap').antiscroll();
+      });
 
 body
   div.back
@@ -26,8 +34,9 @@ body
     li.tips
       a(href="tips.html") ECO TIPS
 
-  div.container
-    div.page.inicio
-      ul
-        li.inicio
-        p.enhanced Su publicidad en las manos de la gente todos los d&iacute;as.
+  div.container.box-wrap.antiscroll-wrap
+    div.box
+      div.page.inicio.antiscroll-inner
+        ul
+          li.inicio
+          p.enhanced Su publicidad en las manos de la gente todos los d&iacute;as.
