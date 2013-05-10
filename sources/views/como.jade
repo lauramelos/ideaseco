@@ -19,6 +19,16 @@ html(lang="en")
       });
 
 body
+  div#fb-root
+  script
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=623279617700062";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
   div.back
     img(src="images/background.jpg", alt="ideas eco")
   ul.menu
@@ -33,6 +43,8 @@ body
       a(href="contacto.html") CONTACTO
     li.tips
       a(href="tips.html") ECO TIPS
+
+    <div class="fb-like" data-href="https://www.facebook.com/pages/Ideas-Eco-Publicidad/155866821248197" data-send="false" data-layout="button_count" data-width="10" data-show-faces="true" data-font="arial"></div>
 
   div.container.box-wrap.antiscroll-wrap
     div.box

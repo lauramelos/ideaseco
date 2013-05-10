@@ -459,11 +459,15 @@ a.link-button-light:hover {
   *behavior: url("http://------definir.un.host-----/css/boxsizing.htc");
   outline: none;
 }
+* html {
+  height: 100px;
+}
 body {
   font-family: 'Noto Sans', 'Quicksand', "Arial", sans-serif;
   background-color: #000;
   color: #565327;
   overflow: hidden;
+  height: 100%;
 }
 body a {
   color: #d0d0d0;
@@ -491,12 +495,22 @@ body i {
 body i {
   color: #008000;
 }
+body div.back {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
 body div.back img {
-  display: block;
-  height: auto;
   position: absolute;
-  max-height: 100%;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 50%;
+  max-width: 50%;
+  margin: auto;
 }
 body a.ingresar {
   height: 300px;
@@ -567,6 +581,11 @@ body ul.menu li.tips.current,
 body ul.menu li.tips:hover {
   background-position: 279px -652px;
 }
+body .fb_edge_widget_with_comment {
+  position: absolute;
+  bottom: -48px;
+  left: 10px;
+}
 body .box .antiscroll-inner,
 body .box {
   height: 100%;
@@ -612,7 +631,7 @@ body div.container div.page ul:first-child {
 }
 body div.container div.page ul li {
   position: relative;
-  width: 66%;
+  width: 76%;
   margin: 0 auto;
 }
 body div.container div.page ul p {
@@ -675,15 +694,6 @@ body div.container div.page.tips {
 body div.container div.page.tips ul h1 {
   width: 330px;
 }
-body div.container div.page.tips ul.enhanced:before {
-  background-position: 0px -38px;
-  height: 18px;
-  width: 18px;
-}
-body div.container div.page.tips ul.enhanced p {
-  margin: 0 auto;
-  text-align: left;
-}
 body div.container div.page.tips ul li.text {
   width: 430px;
 }
@@ -742,6 +752,18 @@ body div.container div.page.tips ul p.enhanced:after {
   left: 50%;
   margin-left: -16px;
 }
+body div.container div.page.tips ul.enhanced:before {
+  background-position: 0px -38px;
+  height: 18px;
+  width: 18px;
+}
+body div.container div.page.tips ul.enhanced p {
+  margin: 0 auto;
+  text-align: left;
+}
+body div.container div.page.contact ul {
+  padding-bottom: 28%;
+}
 body div.container div.page.contact ul p.thanks {
   padding: 200px 0;
 }
@@ -766,7 +788,7 @@ body div.container div.page.contact ul form p label {
 body div.container div.page.contact ul form p input,
 body div.container div.page.contact ul form p textarea {
   border: 0 none;
-  margin: 10px auto;
+  margin: 0px auto 2.75%;
   width: 100%;
   height: 20px;
 }
@@ -787,7 +809,12 @@ body div.container div.page.contact ul form input[type=submit] {
   font-family: 'Fjalla One', sans-serif;
 }
 body div.container div.page.contact ul.links {
-  padding: 130px 0 20px 140px;
+  padding: 0px 0 20px 140px;
+}
+body div.container div.page.contact ul.links .fb_edge_widget_with_comment {
+  bottom: auto;
+  top: -55px;
+  left: 50px;
 }
 body div.container div.page.contact ul.links a {
   font-weight: bold;
@@ -833,60 +860,62 @@ body div.container div.page.contact div.footer {
   body div.container div.page.como ul li:before {
     left: -25px;
   }
-  body div.container div.page.tips ul.enhanced,
   body div.container div.page.tips ul li.text {
     width: 310px;
   }
-  body div.container div.page.tips ul.enhanced.p1,
   body div.container div.page.tips ul li.text.p1 {
     background-image: url("images/ecotips21.png");
     height: 388px;
   }
-  body div.container div.page.tips ul.enhanced.p2,
   body div.container div.page.tips ul li.text.p2 {
     background-image: url("images/ecotips22.png");
     height: 476px;
   }
-  body div.container div.page.tips ul.enhanced.p3,
   body div.container div.page.tips ul li.text.p3 {
     background-image: url("images/ecotips23.png");
     height: 413px;
   }
-  body div.container div.page.tips ul.enhanced.p3 div.botas,
   body div.container div.page.tips ul li.text.p3 div.botas {
     top: 100px;
     right: -25px;
   }
-  body div.container div.page.tips ul.enhanced.p4,
   body div.container div.page.tips ul li.text.p4 {
     background-image: url("images/ecotips24.png");
     height: 458px;
   }
-  body div.container div.page.tips ul.enhanced.p5,
   body div.container div.page.tips ul li.text.p5 {
     background-image: url("images/ecotips25.png");
     height: 310px;
+  }
+  body div.container div.page.contact ul {
+    padding-bottom: 16.8%;
   }
   body div.container div.page.contact ul h1 {
     width: 80%;
     padding: 20px 0 0;
   }
-  body div.container div.page.contact form {
-    width: 80%;
+  body div.container div.page.contact ul form p input,
+  body div.container div.page.contact ul form p textarea {
+    margin: 0px auto 1%;
   }
-  body div.container div.page.contact form textarea,
-  body div.container div.page.contact form .field-container input[type=text],
-  body div.container div.page.contact form .field-container input[type=email] {
+  body div.container div.page.contact ul form p .field-container input[type=text],
+  body div.container div.page.contact ul form p .field-container input[type=email] {
     border: 0 none;
+    margin: 0px auto 1%;
   }
-  body div.container div.page.contact form textarea.consulta {
+  body div.container div.page.contact ul form p textarea.consulta {
     height: 130px;
   }
-  body div.container div.page.contact form a.enviar {
+  body div.container div.page.contact ul form p a.enviar {
     font-size: 24px;
   }
   body div.container div.page.contact ul.links {
     padding: 20px 0 15px 105px;
+  }
+  body div.container div.page.contact ul.links .fb_edge_widget_with_comment {
+    bottom: auto;
+    top: -20px;
+    left: 10px;
   }
   body div.container div.page.contact ul.links a {
     font-size: 16px;
@@ -897,6 +926,7 @@ body div.container div.page.contact div.footer {
     bottom: 5px;
   }
   body ul.menu {
+    top: 10px;
     width: 220.00000000471428px;
   }
   body ul.menu li {

@@ -33,12 +33,14 @@ $body_content_port = 480 - $body_top
   box-sizing: border-box
   *behavior: url( $host + 'css/boxsizing.htc')
   outline: none
-
+  html
+    height: 100px
 body
   font-family: $main-font
   background-color: black
   color: $color-font
   overflow: hidden
+  height: 100%
   a
     color: $grey-light
     text-decoration: none
@@ -62,12 +64,20 @@ body
     color: green
 
   div.back
+    position: fixed
+    top: -50%
+    left: -50%
+    width: 200%
+    height: 200%
     img
-      display: block
-      height: auto
       position: absolute
-      max-height: 100%
-      right: 0px
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      min-width: 50%
+      max-width: 50%
+      margin: auto
 
   a.ingresar
     height: 300px
@@ -125,6 +135,11 @@ body
         &:hover
           background-position: 279px -652px
 
+  .fb_edge_widget_with_comment
+    position: absolute
+    bottom: -48px
+    left: 10px
+
   .box .antiscroll-inner
   .box
     height: 100%
@@ -163,7 +178,7 @@ body
           padding: 10% 0px 1px
         li
           position: relative
-          width: 66%
+          width: 76%
           margin: 0 auto
         p
           width: 100%
@@ -221,14 +236,6 @@ body
         ul
           h1
             width: 330px
-          &.enhanced
-            &:before
-              background-position: 0px -38px
-              height: 18px
-              width: 18px
-            p
-              margin: 0 auto
-              text-align: left
           li.text
             p
               background-color: #faf0d4
@@ -277,9 +284,18 @@ body
               bottom: 20px
               left: 50%
               margin-left: -16px
+          &.enhanced
+            &:before
+              background-position: 0px -38px
+              height: 18px
+              width: 18px
+            p
+              margin: 0 auto
+              text-align: left
 
       &.contact
         ul
+          padding-bottom: 28%
           p.thanks
             padding: 200px 0
           h1
@@ -299,7 +315,7 @@ body
               input
               textarea
                 border: 0 none
-                margin: 10px auto
+                margin: 0px auto 2.75%
                 width:100%
                 height: 20px
               textarea
@@ -317,7 +333,11 @@ body
               padding: 0px
               font-family: $h1-fonts
         ul.links
-          padding: 130px 0 20px 140px
+          .fb_edge_widget_with_comment
+            bottom: auto
+            top: -55px
+            left: 50px
+          padding: 0px 0 20px 140px
           a
             font-weight: bold
             font-size: 20px
@@ -368,7 +388,6 @@ body
               left: -25px
         &.tips
           ul
-            &.enhanced
             li.text
               width: 310px
               &.p1
@@ -392,20 +411,29 @@ body
 
         &.contact
           ul
+            padding-bottom: 16.8%
             h1
               width: 80%
               padding: 20px 0 0
-          form
-            width: 80%
-            textarea
-            .field-container input[type=text]
-            .field-container input[type=email]
-              border: 0 none
-            textarea.consulta
-                height: 130px
-            a.enviar
-              font-size: 24px
+            form
+              p
+                input
+                textarea
+                  margin: 0px auto 1%
+                .field-container input[type=text]
+                .field-container input[type=email]
+                  border: 0 none
+                  margin: 0px auto 1%
+                textarea.consulta
+                    height: 130px
+                a.enviar
+                  font-size: 24px
           ul.links
+            .fb_edge_widget_with_comment
+              bottom: auto
+              top: -20px
+              left: 10px
+
             padding: 20px 0 15px 105px
             a
               font-size: 16px
@@ -415,6 +443,7 @@ body
               bottom: 5px
 
     ul.menu
+      top: 10px
       $h = 1.2727272727
       width: (280 / $h)px
       li
