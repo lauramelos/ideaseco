@@ -524,7 +524,7 @@ body a.ingresar {
 body ul.menu {
   width: 280px;
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 40px;
   z-index: 10;
 }
@@ -594,11 +594,11 @@ body div.container {
   background-image: url("images/bg-pix.png");
   background-repeat: repeat;
   position: absolute;
-  left: 50%;
+  left: 50.5%;
   top: 10%;
   overflow: hidden;
   height: 80%;
-  width: 40%;
+  width: 30%;
 }
 body div.container div.page {
   position: relative;
