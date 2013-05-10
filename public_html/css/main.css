@@ -639,6 +639,9 @@ body div.container div.page.inicio ul li.inicio {
   width: 300px;
   margin: 30px auto;
 }
+body div.container div.page.quees h1 {
+  text-align: center;
+}
 body div.container div.page.como ul li {
   padding: 20px 0px;
   height: 60px;
