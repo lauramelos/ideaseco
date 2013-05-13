@@ -605,7 +605,7 @@ body div.container div.page {
 }
 body div.container div.page ul {
   position: relative;
-  padding: 10% 0;
+  padding: 8% 0;
 }
 body div.container div.page ul h1 {
   margin: 0px auto;
@@ -648,9 +648,6 @@ body div.container div.page ul p.enhanced {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 16px;
-}
-body div.container div.page.inicio ul {
-  padding: 35px 0px;
 }
 body div.container div.page.inicio ul li.inicio {
   background-image: url("images/inicio.png");
