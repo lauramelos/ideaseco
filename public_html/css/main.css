@@ -759,7 +759,7 @@ body div.container div.page.tips ul.enhanced p {
   text-align: left;
 }
 body div.container div.page.contact ul {
-  padding-bottom: 28%;
+  padding-bottom: 1%;
 }
 body div.container div.page.contact ul p.thanks {
   padding: 200px 0;
@@ -806,7 +806,10 @@ body div.container div.page.contact ul form input[type=submit] {
   font-family: 'Fjalla One', sans-serif;
 }
 body div.container div.page.contact ul.links {
-  padding: 0px 0 20px 140px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 body div.container div.page.contact ul.links .fb_edge_widget_with_comment {
   bottom: auto;
@@ -884,9 +887,6 @@ body div.container div.page.contact div.footer {
     background-image: url("images/ecotips25.png");
     height: 310px;
   }
-  body div.container div.page.contact ul {
-    padding-bottom: 16.8%;
-  }
   body div.container div.page.contact ul h1 {
     width: 80%;
     padding: 20px 0 0;
@@ -906,21 +906,22 @@ body div.container div.page.contact div.footer {
   body div.container div.page.contact ul form p a.enviar {
     font-size: 24px;
   }
-  body div.container div.page.contact ul.links {
-    padding: 20px 0 15px 105px;
-  }
   body div.container div.page.contact ul.links .fb_edge_widget_with_comment {
     bottom: auto;
-    top: -20px;
+    top: -30px;
     left: 10px;
   }
   body div.container div.page.contact ul.links a {
     font-size: 16px;
     line-height: 23px;
+    margin-left: 106px;
+  }
+  body div.container div.page.contact ul.links a.mail {
+    margin-bottom: 20px;
   }
   body div.container div.page.contact ul.links:after {
     left: 15px;
-    bottom: 5px;
+    bottom: 50px;
   }
   body ul.menu {
     top: 10px;
