@@ -603,6 +603,7 @@ body div.container {
 }
 body div.container div.page {
   position: relative;
+  height: 100%;
 }
 body div.container div.page ul {
   position: relative;
