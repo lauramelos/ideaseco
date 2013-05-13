@@ -642,12 +642,12 @@ body div.container div.page ul p.nom {
   margin: 0px auto 25px;
 }
 body div.container div.page ul p.enhanced {
-  width: 68%;
+  width: 70%;
   border: 2px solid #96ba20;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 body div.container div.page.inicio ul li.inicio {
   background-image: url("images/inicio.png");
@@ -734,7 +734,7 @@ body div.container div.page.tips ul li.text.p5 {
 }
 body div.container div.page.tips ul p.enhanced {
   width: 72%;
-  font-weight: 600;
+  font-weight: 700;
   margin: 60px auto;
   position: relative;
   padding-bottom: 60px;
