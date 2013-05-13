@@ -599,7 +599,7 @@ body div.container {
   overflow: hidden;
   height: 80%;
   width: 30%;
-  min-width: 450px;
+  min-width: 410px;
 }
 body div.container div.page {
   position: relative;
