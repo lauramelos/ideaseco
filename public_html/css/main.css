@@ -525,7 +525,7 @@ body ul.menu {
   width: 280px;
   position: absolute;
   top: 20px;
-  left: 40px;
+  right: 60%;
   z-index: 10;
 }
 body ul.menu li {
