@@ -1,6 +1,6 @@
 <?php 
 $errors = '';
-$myemail = 'facundo@svarez.com.ar';//<-----Put Your email address here.
+$myemail = 'ventas@ideasecopublicidad.com.ar';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['phone'])  || 
    empty($_POST['email']) || 
