@@ -2,6 +2,7 @@ public_html/index.html
 public_html/css/main.css
 public_html/js/main.js
 public_html/cache
+Makefile
 sources/styles/node_modules
 sources/javascript/components
 sources/javascript/build
